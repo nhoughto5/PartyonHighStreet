@@ -1,8 +1,8 @@
 {
   "name": "thepartyonhighstreet",
-  "description": "Gatsby default starter",
+  "description": "The Party on High street",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "N&N",
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
