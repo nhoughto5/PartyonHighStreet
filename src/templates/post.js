@@ -6,7 +6,7 @@ export default function Template({data}){
 
   return (
       <div>
-        <h1>{post.frontMatter.title}</h1>
+        <h1>{post.frontmatter.title}</h1>
       </div>
   )
 }
