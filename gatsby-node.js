@@ -33,8 +33,6 @@ exports.createPages = ({boundActionCreators, graphql}) => {
             component: postTemplate
           })
         });
-
-        return
       })
     );
   })

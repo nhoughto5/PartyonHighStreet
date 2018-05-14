@@ -1,0 +1,27 @@
+1.) index
+        Header
+            links (+= store)
+            logo
+            band name
+        Banner (canvas)
+        Latest News
+        Videos
+        Image Gallery
+        Footer (links to social media)
+2.) Band Page
+        Header
+        Band Bio + photos
+        Individual bios + photos
+        Footer (links to social media)
+3.) Tour
+        Header
+        List of shows
+        Footer (links to social media)
+4.) News
+        Header
+        List of news posts
+        Footer (links to social media)
+5.) Contact
+        Header
+        Email forum
+        Footer (links to social media)
