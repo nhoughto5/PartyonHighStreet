@@ -5,6 +5,7 @@
             band name
         Banner (canvas)
         Latest News
+        Shows
         Videos
         Image Gallery
         Footer (links to social media)
@@ -25,3 +26,8 @@
         Header
         Email forum
         Footer (links to social media)
+
+Example band websites
+http://leelandonline.com/
+http://milescalder.com/ 
+https://thenoolands.com/about/ 

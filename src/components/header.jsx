@@ -4,14 +4,19 @@ import styled from "styled-components"
 
 const HeaderWrapper = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   height: 60px;
   align-items: center;
-  background-color: rgba(0,0,0,0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-color: white;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+`;
+
+const LeftLogo = styled.div`
+  color: rgba(0,0,0,0.9);
+  font-size: 150%;
+  font-weight: 600;
 `;
 
 const RightLinks = styled.div`
@@ -20,18 +25,21 @@ const RightLinks = styled.div`
 
   a {
     margin: 0 2rem;
-    color: white;
-    font-size: 150%;
+    color: rgba(0,0,0,0.5);
+    font-size: 125%;
   }
 `;
 
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
+    <LeftLogo>
+      <Link to='/'>The Party On High Street</Link>
+    </LeftLogo>
     <RightLinks>
-      <Link to='/'>Link</Link>
-      <Link to='/'>Link</Link>
-      <Link to='/'>Link</Link>
-      <Link to='/'>Link</Link>
+      <Link to='/'>About</Link>
+      <Link to='/'>Videos</Link>
+      <Link to='/'>Music</Link>
+      <Link to='/'>News</Link>
     </RightLinks>
   </HeaderWrapper>
 )

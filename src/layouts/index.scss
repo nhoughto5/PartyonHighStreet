@@ -8,12 +8,12 @@ $body-font: 'Open Sans', sans-serif;
 }
 
 html {
-  font-size: 15px;
+  font-size: 10px;
   font-family: $body-font;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font;
+  font-family: $body-font;
 }
 
 h1 {
