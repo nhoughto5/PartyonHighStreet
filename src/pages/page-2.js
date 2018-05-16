@@ -1,12 +1,20 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import '../layouts/page2.scss';
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-const SecondPage = () => (
-  <div>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </div>
-)
 
-export default SecondPage
+  render() {
+    return (
+        <div className="boxy">
+          <div>Hello Nana</div>
+        </div>
+
+    );
+  }
+}
+
+export default Header;
