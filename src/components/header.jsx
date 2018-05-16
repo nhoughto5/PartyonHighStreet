@@ -37,7 +37,7 @@ const Header = ({ siteTitle }) => (
     </LeftLogo>
     <RightLinks>
       <Link to='/about/'>About</Link>
-      <Link to='/'>Videos</Link>
+      <Link to='/videos/'>Videos</Link>
       <Link to='/'>Music</Link>
       <Link to='/'>News</Link>
     </RightLinks>
