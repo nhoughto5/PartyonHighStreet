@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => (
       <Link to='/'>The Party On High Street</Link>
     </LeftLogo>
     <RightLinks>
-      <Link to='/'>About</Link>
+      <Link to='/about/'>About</Link>
       <Link to='/'>Videos</Link>
       <Link to='/'>Music</Link>
       <Link to='/'>News</Link>
