@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import FullPageBanner from '../components/full-page-banner'
-import LatestNews from '../components/index-news'
+import Grid from '../components/index-grid'
 
 const IndexPage = () => (
   <div>

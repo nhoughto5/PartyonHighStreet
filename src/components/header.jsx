@@ -11,13 +11,22 @@ const HeaderWrapper = styled.div`
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 2rem;
+
+  @media screen and (max-width: 460px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 const LeftLogo = styled.div`
   color: rgba(0,0,0,0.9);
   font-size: 150%;
   font-weight: 600;
-  margin: 0 2rem;
+
+  @media screen and (max-width: 460px) {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 const RightLinks = styled.div`
@@ -25,9 +34,17 @@ const RightLinks = styled.div`
   justify-content: space-evenly;
 
   a {
-    margin: 0 2rem;
+    margin-left: 2rem;
     color: rgba(0,0,0,0.5);
     font-size: 125%;
+  }
+
+  @media screen and (max-width: 460px) {
+    width: 100%;
+    
+    a {
+      margin-left: 0;
+    }
   }
 `;
 
