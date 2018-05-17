@@ -8,34 +8,43 @@ const VideoGridWrap = styled.div`
 `;
 
 const VideoFlexGridTwo = styled.div`
+  display: flex;
+
   justify-content: space-between;
 `;
 
 const VideoFlexGridItem = styled.div`
-    width: 48%;
-
-    img {
-        min-height: 300px;
-        min-width: 100%;
-
-        width: 100%;
-        height: 300px;
-
-        object-fit: cover;
-        object-position: 0 0;
-    }
+  width: 48%;
 `;
+
+const ResponsiveWrap = styled.div`
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+
+  iframe {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+`
 
 const VideoGrid = () => (
     <VideoGridWrap>
       <VideoFlexGridTwo>
         <VideoFlexGridItem>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/v12XozVLo_E" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+          <ResponsiveWrap>
+            <iframe src="https://www.youtube.com/embed/v12XozVLo_E" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+          </ResponsiveWrap>
         </VideoFlexGridItem>
-      </VideoFlexGridTwo>
-      <VideoFlexGridTwo>
         <VideoFlexGridItem>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/v12XozVLo_E" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+          <ResponsiveWrap>
+            <iframe src="https://www.youtube.com/embed/v12XozVLo_E" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+          </ResponsiveWrap>
         </VideoFlexGridItem>
       </VideoFlexGridTwo>
     </VideoGridWrap>
