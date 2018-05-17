@@ -13,24 +13,30 @@ const GridWrapper = styled.div`
     max-width: 1000px;
     margin: 7rem auto;
     padding: 0 2rem;
+
+    @media screen and (max-width: 700px) {
+        margin: 2rem auto;
+    }
 `
 
 const FlexContainer = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
+    flex-wrap: wrap;
 `
 
 const DivWithImg = styled.div`
     overflow: hidden;
     position: relative;
+    margin-bottom: 2rem;
 
     img {
-        min-height: 100%;
-        min-width: 100%;
-
         width: 100%;
         height: auto;
+
+        min-height: 100%;
+        min-width: 100%;
 
         object-fit: cover;
         opacity: 0.7;
@@ -60,25 +66,57 @@ const Overlay = styled.div`
 const HalfWidth = DivWithImg.extend`
     width: 48%;
     height: 600px;
+
+    @media screen and (max-width: 700px) {
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 250px;
+    }
 `
 
 const HalfStacked = HalfWidth.extend`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (max-width: 700px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+    }
 `
 
 const StackedItem = DivWithImg.extend`
     height: 48%;
+    margin: 0;
+
+    @media screen and (max-width: 700px) {
+        height: 250px;
+        width: 100%;
+
+        &:first-child {
+            margin-bottom: 2rem;
+        }
+    }
 `
 
 const ThirdWidth = DivWithImg.extend`
     width: 31%;
     height: 250px;
+
+    @media screen and (max-width: 700px) {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 `
 
 const TwoThirdWidth = DivWithImg.extend`
     width: 64%;
+
+    @media screen and (max-width: 700px) {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 `
 
 const Grid = () => (
@@ -98,8 +136,8 @@ const Grid = () => (
                     <Overlay><h2>Shows</h2></Overlay>
                 </StackedItem>
             </HalfStacked>
-        </FlexContainer>
-        <FlexContainer>
+        {/* </FlexContainer>
+        <FlexContainer> */}
             <ThirdWidth>
                 <img src={bandImage4} alt="About The Band"/>
                 <Overlay><h2>Images</h2></Overlay>

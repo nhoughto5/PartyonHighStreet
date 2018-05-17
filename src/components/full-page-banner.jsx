@@ -12,6 +12,7 @@ const Banner = styled.div`
     height: 80vh;
     background-image: url(${bgImage});
     background-size: cover;
+    background-position: center;
 `
 
 const FullPageBanner = () => (
