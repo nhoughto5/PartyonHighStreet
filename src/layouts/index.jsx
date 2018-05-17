@@ -12,7 +12,7 @@ const Layout = ({ children, data }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>The Party On High Street</title>
       {/* <link rel="shortcut icon" href={favicon} /> */}
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i|Press+Start+2P" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600" rel="stylesheet"/>
     </Helmet>
     <Header siteTitle={data.site.siteMetadata.title} />
     <div>

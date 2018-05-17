@@ -12,6 +12,7 @@ const GridWrapper = styled.div`
     width: 100%;
     max-width: 1000px;
     margin: 7rem auto;
+    padding: 0 2rem;
 `
 
 const FlexContainer = styled.div`
