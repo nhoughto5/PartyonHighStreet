@@ -40,7 +40,7 @@ const AboutPageBanner = () => (
     <BannerWrapper>
         <Banner></Banner>
         <Overlay>
-            <h1>About the Band</h1>
+            <h1>Meet the Band</h1>
         </Overlay>
     </BannerWrapper>
   )

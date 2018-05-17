@@ -17,6 +17,7 @@ const LeftLogo = styled.div`
   color: rgba(0,0,0,0.9);
   font-size: 150%;
   font-weight: 600;
+  margin: 0 2rem;
 `;
 
 const RightLinks = styled.div`
