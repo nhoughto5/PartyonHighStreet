@@ -6,7 +6,6 @@ class Header extends React.Component {
     super(props);
   }
 
-
   render() {
     return (
         <div className="boxy">

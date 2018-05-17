@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-
+// import "./videos.scss"
 const VideoFlexGridItem = styled.div`
   width: 48%;
 `;
@@ -25,6 +25,10 @@ const VideoGridItem = ({srcURL}) => (
     <VideoFlexGridItem>
         <ResponsiveWrap>
         <iframe src={srcURL} frameBorder="0" allowFullScreen></iframe>
+        {/* <video>
+            <source src={srcURL} type="video/mp4">
+            Your browser does not support the video tag.
+        </video> */}
         </ResponsiveWrap>
     </VideoFlexGridItem>
 );
