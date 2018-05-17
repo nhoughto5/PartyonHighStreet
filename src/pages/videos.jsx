@@ -1,9 +1,11 @@
 import React from 'react';
-import VideoGrid from '../components/video-grid';
+import Videos from '../components/video/index';
+import VideoBanner from "../components/video/video-banner";
 
 const VideoPage = () => (
     <div>
-      <VideoGrid/>
+      <VideoBanner/>
+      <Videos/>
     </div>
 );
 
