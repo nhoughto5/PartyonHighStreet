@@ -1,0 +1,17 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": [
+          "Chrome >= 40",
+          "FireFox >= 48",
+          "Safari >= 8",
+          "Explorer >= 11",
+          "Edge >= 13"]
+      }
+    }]
+  ],
+  "ignore": [
+    "node_modules"
+  ]
+}

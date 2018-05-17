@@ -105,6 +105,6 @@ const AboutGrid = () => (
             </GridItem>
         </FlexCentered> */}
     </GridWrapper>
-)
+);
   
-export default AboutGrid
+export default AboutGrid;
