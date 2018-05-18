@@ -24,11 +24,7 @@ const ResponsiveWrap = styled.div`
 const VideoGridItem = ({srcURL}) => (
     <VideoFlexGridItem>
         <ResponsiveWrap>
-        <iframe src={srcURL} frameBorder="0" allowFullScreen></iframe>
-        {/* <video>
-            <source src={srcURL} type="video/mp4">
-            Your browser does not support the video tag.
-        </video> */}
+          <iframe src={srcURL} frameBorder="0" allowFullScreen></iframe>
         </ResponsiveWrap>
     </VideoFlexGridItem>
 );
