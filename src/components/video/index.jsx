@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import VideoGridItem from "./video-grid-item";
-import {TweenMax} from 'gsap';
+
 
 const VideoGridWrap = styled.div`
   width: 100%;
@@ -21,16 +21,7 @@ class VideoGrid extends React.Component {
   }
 
   componentDidMount(){
-    let videos = document.querySelectorAll("iframe");
-    let loadedCount = 0;
-    
-    for(let i = 0; i < videos.length; ++i){
-      videos[i].addEventListener("onYouTubeIframeAPIReady", function(){
-        console.log(`Video ${i} loaded`)
-        loadedCount++;
-        if(loadedCount === videos.length) TweenMax.fromTo(videos[i], 3, {}, {opacity: 1});
-      })
-    }
+
   }
 
   render(){

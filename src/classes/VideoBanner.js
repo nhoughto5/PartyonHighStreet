@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import cameraModel from "../assets/models/cameraModel.obj";
 const OBJLoader = require('three-obj-loader');
 
 export default class VideoBanner {
@@ -50,9 +51,10 @@ export default class VideoBanner {
 
   loadCamera(){
     let loader = new THREE.OBJLoader();
-    loader.load('../assets/models/cameraModel.obj', (obj) => {
-      this.scene.add(obj);
-    });
+    this.scene.add(cameraModel);
+    // loader.load(cameraModel, (obj) => {
+      
+    // });
   }
 
   animate() {

@@ -1,5 +1,12 @@
 const path = require('path');
 
+exports.modifyWebpackConfig = ({config, stage}) => {
+  config.loader('webpack-obj-loader', {
+    test: /\.obj$/,
+    loaders: ['raw']
+  })
+};
+
 exports.createPages = ({boundActionCreators, graphql}) => {
   const {createPage} = boundActionCreators;
 
