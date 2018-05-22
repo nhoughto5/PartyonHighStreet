@@ -1,30 +1,38 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import HomePage from '../components/home-page';
+import TitlePage from '../components/title-page';
+class IndexPage extends React.Component {
 
-import FullPageBanner from '../components/full-page-banner'
-import Grid from '../components/index-grid'
+  constructor(props){
+    super(props);
+    this.state = {
+      classes: '',
+      showHome: false
+    };
+  }
 
-const IndexPage = () => (
-  <div>
-    <FullPageBanner />
-    <Grid />
-  </div>
-)
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        classes: 'animationFade',
+        showHome: true
+      })
+    }, 4000)
+  }
+  
+  render(){
+    const isTitlePage = this.state.isTitlePage;
+    const content = isTitlePage ? (<TitlePage/>) : (<HomePage/>);
+    return (
+      // <div>{content}</div>
+      <div>
+        <TitlePage classes={this.state.classes} />
+        {this.state.showHome && <HomePage/>}
+      </div>
 
-export const pageQuery = graphql `
-    query IndexQuery {
-      allMarkdownRemark(limit: 10) {
-        edges {
-          node {
-            id
-            frontmatter {
-              title
-              path
-            }
-          }
-        }
-      }
-    }
-`;
+    );
+  }
+}
 
-export default IndexPage
+export default IndexPage;
