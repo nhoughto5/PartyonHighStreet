@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import HomePage from '../components/home-page';
 import TitlePage from '../components/title-page';
+
 class IndexPage extends React.Component {
 
   constructor(props){

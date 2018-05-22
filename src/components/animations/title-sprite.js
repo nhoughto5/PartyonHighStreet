@@ -1,4 +1,5 @@
 import spriteSheet from '../../images/brin_sprite.png';
+import {TweenLite, Elastic} from 'gsap';
 
 export default class TitleAnimation {
     constructor(){
@@ -13,19 +14,27 @@ export default class TitleAnimation {
         // this.frames = [0,1,2,1];
         this.frames = [
             {pos: 0, sX: 0}, 
-            {pos: 1, sX: 372}, 
+            {pos: 1, sX: 374, sWidth: this.spriteWidth - 3}, 
             {pos: 2, sX: 712}, 
-            {pos: 1, sX: 372}];
+            {pos: 1, sX: 374, sWidth: this.spriteWidth - 3}];
         this.currentFrame = 0;
         this.img.onload = () => {
-            this.animate();
+            this.draw(this.frames[0]);
+            TweenLite.from(this.canvas,1.5, {
+                scale: 0.1,
+                rotation: 90,
+                ease: Elastic.easeOut.config(1.2, 0.75),
+                onComplete: () => {
+                    this.animate();
+                }
+            });
         }
     }
 
     draw(frame){
         let sx = frame.sX; 
         let sy = 0; 
-        let sWidth = this.spriteWidth; 
+        let sWidth = frame.sWidth || this.spriteWidth; 
         let sHeight = this.spriteHeight; 
         let dx = 0; 
         let dy = 0; 
