@@ -1,70 +1,51 @@
-import * as THREE from 'three';
-import cameraModel from "../assets/models/cameraModel.obj";
-const OBJLoader = require('three-obj-loader');
+import * as PIXI from 'pixi.js';
+import { TweenMax, Power2 } from 'gsap';
+import brin from '../images/brin_sprite.png';
 
 export default class VideoBanner {
-  constructor(){
-
-    let OBJLoader = require('three-obj-loader');
-    OBJLoader(THREE);
-
+  constructor() {
     this.container = document.getElementById('videoBannerContainer');
-    this.width = this.container.offsetWidth;
-    this.height = this.container.offsetHeight;
-    this.scene = new THREE.Scene();
-    this.scene.background = new THREE.Color( 0xcce0ff );
-    this.scene.fog = new THREE.Fog( 0xcce0ff, 500, 10000 );
-    this.camera = new THREE.PerspectiveCamera(45, this.width / this.height, 1, 500);
-    this.camera.position.set(0,10,20);
-
-    this.light = new THREE.DirectionalLight( 0xdfebff, 1 );
-    this.light.position.set( 50, 200, 100 );
-    this.light.position.multiplyScalar( 1.3 );
-    this.light.castShadow = true;
-    this.light.shadow.mapSize.width = 1024;
-    this.light.shadow.mapSize.height = 1024;
-    let d = 300;
-    this.light.shadow.camera.left = - d;
-    this.light.shadow.camera.right = d;
-    this.light.shadow.camera.top = d;
-    this.light.shadow.camera.bottom = - d;
-    this.light.shadow.camera.far = 1000;
-    this.scene.add( this.light );
-
-    this.loadCamera();
-
-    const size = 100;
-    const divisions = 100;
-    let gridHelper = new THREE.GridHelper( size, divisions );
-    this.scene.add(gridHelper);
-
-    this.renderer = new THREE.WebGLRenderer( { antialias: true } );
-    this.renderer.setPixelRatio( window.devicePixelRatio );
-    this.renderer.setSize(this.width, this.height );
-
-    this.container.appendChild(this.renderer.domElement);
-    this.renderer.gammaInput = true;
-    this.renderer.gammaOutput = true;
-    this.scene.add( new THREE.AmbientLight( 0x666666 ) );
-    this.animate();
-  }
-
-  loadCamera(){
-    let loader = new THREE.OBJLoader();
-    this.scene.add(cameraModel);
-    // loader.load(cameraModel, (obj) => {
-      
-    // });
-  }
-
-  animate() {
-    window.requestAnimationFrame(() => {
-      this.animate();
+    const app = new PIXI.Application({
+      width: this.container.offsetWidth,
+      height: this.container.offsetHeight,
+      transparent: true,
     });
-    this.render();
+    this.stage = app.stage;
+    app.renderer.autoResize = true;
+    this.container.appendChild(app.view);
+
+    PIXI.loader.add(brin).load(() => {
+      const {
+        texture,
+      } = PIXI.loader.resources[brin];
+      const rectangle = new PIXI.Rectangle(1082, 0, 593, 452);
+      texture.frame = rectangle;
+      this.brinSprite = new PIXI.Sprite(texture);
+      this.brinSprite.x = (this.container.offsetWidth / 2) - (593 / 2);
+      this.brinSprite.y = -40;
+      this.stage.addChild(this.brinSprite);
+      this.gameLoop();
+    });
   }
 
-  render() {
-    this.renderer.render( this.scene, this.camera );
+  gameLoop() {
+    TweenMax.to(this.brinSprite, 2, {
+      x: '+= 20px',
+      y: '+= 20px',
+      ease: Power2.easeInOut,
+      yoyo: true,
+      repeat: -1,
+    });
+    // setInterval(() => {
+    //   if (this.brinDisplacementUp) {
+    //     this.brinSprite.y += this.brinTotalDisplacementY;
+    //     this.brinSprite.x -= this.brinTotalDisplacementX;
+    //     this.brinDisplacementUp = false;
+    //   } else {
+    //     this.brinSprite.y -= this.brinTotalDisplacementY;
+    //     this.brinSprite.x += this.brinTotalDisplacementX;
+    //     this.brinDisplacementUp = true;
+    //   }
+    // }, 750);
   }
 }

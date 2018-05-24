@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import BannerAnim from '../../classes/VideoBanner';
 const CanvasBanner = styled.div`
-    background-color: #d2e0f7;
+    background-color: white;
     width: 100%;
     height: 35rem;
 `;
