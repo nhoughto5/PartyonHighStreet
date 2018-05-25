@@ -7,7 +7,7 @@ const CanvasBanner = styled.div`
     height: 35rem;
 `;
 
-class VideoBanner extends React.Component {
+class BrinDiveAnim extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -24,4 +24,4 @@ class VideoBanner extends React.Component {
   }
 }
 
-export default VideoBanner;
+export default BrinDiveAnim;

@@ -36,16 +36,5 @@ export default class VideoBanner {
       yoyo: true,
       repeat: -1,
     });
-    // setInterval(() => {
-    //   if (this.brinDisplacementUp) {
-    //     this.brinSprite.y += this.brinTotalDisplacementY;
-    //     this.brinSprite.x -= this.brinTotalDisplacementX;
-    //     this.brinDisplacementUp = false;
-    //   } else {
-    //     this.brinSprite.y -= this.brinTotalDisplacementY;
-    //     this.brinSprite.x += this.brinTotalDisplacementX;
-    //     this.brinDisplacementUp = true;
-    //   }
-    // }, 750);
   }
 }
