@@ -3,16 +3,17 @@ module.exports = {
     title: 'The Party on High Street',
   },
   plugins: [
-      `gatsby-plugin-react-helmet`,
-      `gatsby-plugin-sass`,
-      `gatsby-plugin-styled-components`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/posts/`,
         name: 'posts',
-      }
+      },
     },
-      'gatsby-transformer-remark'
+    'gatsby-transformer-remark',
   ],
+  pathPrefix: '/reponame',
 };

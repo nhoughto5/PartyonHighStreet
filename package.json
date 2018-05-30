@@ -28,7 +28,8 @@
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-js": "watchify demo/js/HomePage.js -t babelify -o demo/js/homepageCompiled.js -dv"
+    "watch-js": "watchify demo/js/HomePage.js -t babelify -o demo/js/homepageCompiled.js -dv",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "babel-cli": "*",
