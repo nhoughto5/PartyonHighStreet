@@ -1,0 +1,68 @@
+{
+  "assetsByChunkName": {
+    "path---second-post": [
+      "path---second-post-b63d192601885f6d500f.js",
+      "path---second-post-b63d192601885f6d500f.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-66d252a9c9b62e32f9f3.js",
+      "component---src-pages-index-js-66d252a9c9b62e32f9f3.js.map"
+    ],
+    "path---": [
+      "path----988ddd1ff3fa5cbf8797.js",
+      "path----988ddd1ff3fa5cbf8797.js.map"
+    ],
+    "component---src-layouts-index-jsx": [
+      "component---src-layouts-index-jsx-4f996659c4d3acf94992.js",
+      "component---src-layouts-index-jsx-4f996659c4d3acf94992.js.map"
+    ],
+    "path---first-post": [
+      "path---first-post-4e1504d5ad8eecd3ac47.js",
+      "path---first-post-4e1504d5ad8eecd3ac47.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-about-jsx": [
+      "component---src-pages-about-jsx-81e36e4230fd1141505e.js",
+      "component---src-pages-about-jsx-81e36e4230fd1141505e.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-e0ccac081f8b16f6b39a.js",
+      "commons-e0ccac081f8b16f6b39a.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-templates-post-js": [
+      "component---src-templates-post-js-75c57ac42af9a412a969.js",
+      "component---src-templates-post-js-75c57ac42af9a412a969.js.map"
+    ],
+    "component---src-pages-videos-jsx": [
+      "component---src-pages-videos-jsx-253a20f8c2c3cfecef26.js",
+      "component---src-pages-videos-jsx-253a20f8c2c3cfecef26.js.map"
+    ],
+    "app": [
+      "app-d47bb585046342da031d.js",
+      "app-d47bb585046342da031d.js.map"
+    ],
+    "path---videos": [
+      "path---videos-a0e39f21c11f6a62c5ab.js",
+      "path---videos-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---about": [
+      "path---about-a0e39f21c11f6a62c5ab.js",
+      "path---about-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
