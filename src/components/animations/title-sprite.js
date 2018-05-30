@@ -1,4 +1,5 @@
 import { TweenLite, Power1 } from 'gsap';
+import * as PIXI from 'pixi.js';
 import spriteSheet from '../../images/brin_sprite.png';
 
 export default class TitleAnimation {
@@ -17,14 +18,16 @@ export default class TitleAnimation {
       { pos: 2, sX: 712 },
       { pos: 1, sX: 374, sWidth: this.spriteWidth - 3 }];
     this.currentFrame = 0;
+    this.count = 0;
     this.img.onload = () => {
       this.draw(this.frames[0]);
       TweenLite.from(this.canvas, 1.5, {
         scale: 0.1,
         opacity: 0,
+        delay: 0.5,
         ease: Power1.easeOut,
         onComplete: () => {
-          this.animate();
+          this.moveBrin();
         },
       });
     };
@@ -43,11 +46,13 @@ export default class TitleAnimation {
     this.ctx.drawImage(this.img, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);
   }
 
-  animate() {
+  moveBrin() {
     window.setInterval(() => {
       const frameNum = this.frames[this.currentFrame];
       this.draw(frameNum);
       this.currentFrame = (this.currentFrame + 1) % this.frames.length;
     }, 100);
   }
+
+
 }

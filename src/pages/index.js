@@ -7,32 +7,31 @@ import { tap, delay } from 'rxjs/operators';
 
 class IndexPage extends React.Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       classes: '',
-      showHome: false
+      showHome: false,
     };
   }
 
   componentDidMount() {
-    timer(4000).pipe(
-      tap((x) => this.setState({
-        classes: 'animationFade',
-        showHome: true
-      })),
-      delay(3000)
-    ).subscribe(
-      () => this.setState({ classes: 'title-no-show' })
-    );
+    // timer(4000).pipe(
+    //   tap((x) => this.setState({
+    //     classes: 'title-animation-div animationFade',
+    //     showHome: true
+    //   })),
+    //   delay(3000)
+    // ).subscribe(
+    //   () => this.setState({ classes: 'title-animation-div animationFade title-no-show' })
+    // );
   }
   
-  render(){
-    const isTitlePage = this.state.isTitlePage;
-    const content = isTitlePage ? (<TitlePage/>) : (<HomePage/>);
+  render() {
     return (
       <div>
-        <TitlePage classes={this.state.classes} />
+        {/* <TitlePage classes={this.state.classes} /> */}
+        <HomePage/>
         {this.state.showHome && <HomePage/>}
       </div>
     );

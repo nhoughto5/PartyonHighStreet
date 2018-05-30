@@ -1,10 +1,12 @@
 const path = require('path');
 
-exports.modifyWebpackConfig = ({config, stage}) => {
-  config.loader('webpack-obj-loader', {
-    test: /\.obj$/,
-    loaders: ['raw']
-  })
+exports.modifyWebpackConfig = ({ config, stage }) => {
+  if (stage === "build-html") {
+    config.loader("null", {
+      test: /pixi.js/,
+      loader: "null-loader",
+    });
+  }
 };
 
 exports.createPages = ({boundActionCreators, graphql}) => {

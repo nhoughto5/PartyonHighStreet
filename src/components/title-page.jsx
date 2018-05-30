@@ -33,7 +33,6 @@ class TitlePage extends React.Component {
         return (
             <AnimationDiv className={this.props.classes}>
                 <canvas className="spriteCanvas" id="spriteCanvas"/>
-                {/* <div className="titleBackground"></div> */}
             </AnimationDiv>
         );
     }
