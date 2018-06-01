@@ -1,30 +1,29 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import styled from "styled-components"
+import React from 'react';
+import styled from 'styled-components';
 
-import bandImage from '../images/band.jpg'
-import bandImage2 from '../images/band1.jpg'
-import bandImage3 from '../images/band2.jpg'
-import bandImage4 from '../images/band3.jpg'
-import wideAngle from '../images/wideangle.jpg'
+import bandImage from '../images/band.jpg';
+import bandImage2 from '../images/band1.jpg';
+import bandImage3 from '../images/band2.jpg';
+import bandImage4 from '../images/band3.jpg';
+import wideAngle from '../images/wideangle.jpg';
 
 const GridWrapper = styled.div`
     width: 100%;
-    max-width: 1000px;
-    margin: 7rem auto;
-    padding: 0 2rem;
+    max-width: 1500px;
+    margin: 1rem auto;
+    padding: 0 1rem;
 
     @media screen and (max-width: 700px) {
         margin: 2rem auto;
     }
-`
+`;
 
 const FlexContainer = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
     flex-wrap: wrap;
-`
+`;
 
 const DivWithImg = styled.div`
     overflow: hidden;
@@ -42,7 +41,7 @@ const DivWithImg = styled.div`
         opacity: 0.7;
         // filter: grayscale(1);
     }
-`
+`;
 
 const Overlay = styled.div`
     position: absolute;
@@ -61,7 +60,7 @@ const Overlay = styled.div`
     &:hover {
         background-color: rgba(0,0,0,0.2);
     }
-`
+`;
 
 const HalfWidth = DivWithImg.extend`
     width: 48%;
@@ -72,7 +71,7 @@ const HalfWidth = DivWithImg.extend`
         margin-bottom: 2rem;
         height: 250px;
     }
-`
+`;
 
 const HalfStacked = HalfWidth.extend`
     display: flex;
@@ -84,7 +83,7 @@ const HalfStacked = HalfWidth.extend`
         flex-wrap: wrap;
         height: auto;
     }
-`
+`;
 
 const StackedItem = DivWithImg.extend`
     height: 48%;
@@ -98,7 +97,7 @@ const StackedItem = DivWithImg.extend`
             margin-bottom: 2rem;
         }
     }
-`
+`;
 
 const ThirdWidth = DivWithImg.extend`
     width: 31%;
@@ -108,7 +107,7 @@ const ThirdWidth = DivWithImg.extend`
         width: 100%;
         margin-bottom: 2rem;
     }
-`
+`;
 
 const TwoThirdWidth = DivWithImg.extend`
     width: 64%;
@@ -117,7 +116,7 @@ const TwoThirdWidth = DivWithImg.extend`
         width: 100%;
         margin-bottom: 2rem;
     }
-`
+`;
 
 const Grid = () => (
     <GridWrapper>
@@ -148,6 +147,6 @@ const Grid = () => (
             </TwoThirdWidth>
         </FlexContainer>
     </GridWrapper>
-)
+);
 
-export default Grid
+export default Grid;

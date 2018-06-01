@@ -22,8 +22,10 @@ export default class VideoBanner {
     this.app.renderer.autoResize = true;
     this.renderer = this.app.renderer;
     this.container.appendChild(this.app.view);
+    this.ratio = this.container.offsetWidth / this.container.offsetHeight;
     this.clouds = [];
     this.debris = [];
+    this.origWidth = this.container.offsetWidth;
     this.addMoon();
     this.addDebris(leaf1, 0.01, 5);
     this.addDebris(snowflake1, 0.1, 5);
@@ -31,12 +33,43 @@ export default class VideoBanner {
     this.addCloud(cloud1);
     this.addCloud(cloud2);
     this.addCloud(cloud3);
+    this.attachListeners();
+    this.resize();
     this.animate();
+  }
+
+  attachListeners() {
+    window.addEventListener('resize', () => {
+      this.resize();
+    });
+  }
+
+  resize() {
+    // const w = this.container.offsetWidth;
+    // const h = this.container.offsetHeight;
+    // this.renderer.view.style.width = `${w}px`;
+    // this.renderer.view.style.height = `${h}px`;
+    // this.renderer.resize(w,h);
+    // this.brinSprite.x += (this.origWidth - this.container.width);
+    if (window.innerWidth / window.innerHeight >= this.ratio) {
+        var w = window.innerHeight * this.ratio;
+        var h = window.innerHeight;
+    } else {
+        var w = window.innerWidth;
+        var h = window.innerWidth / this.ratio;
+    }
+    this.renderer.view.style.width = w + 'px';
+    this.renderer.view.style.height = h + 'px';
+  }
+
+  positionBrin() {
+    this.brinSprite.x = this.container.offsetWidth / 2 - 593 / 2;
+    this.brinSprite.y = -40;
   }
 
   addMoon() {
     this.moonSprite = PIXI.Sprite.fromImage(moon);
-    this.moonSprite.scale.set(0.120, 0.120);
+    this.moonSprite.scale.set(0.12, 0.12);
     this.moonSprite.x = -100;
     this.moonSprite.y = this.container.offsetHeight / 2;
     this.stage.addChild(this.moonSprite);
@@ -78,7 +111,10 @@ export default class VideoBanner {
 
   repositionCloud(sprite) {
     sprite.x = -(sprite.width * Utility.getRandomIntFromRange(1, 2));
-    sprite.y = Utility.randomNumFromRange(this.container.offsetHeight * 0.2, this.container.offsetHeight * 0.8);
+    sprite.y = Utility.randomNumFromRange(
+      this.container.offsetHeight * 0.2,
+      this.container.offsetHeight * 0.8,
+    );
   }
 
   updateCloud() {
@@ -94,16 +130,13 @@ export default class VideoBanner {
   addBrin() {
     PIXI.loader.reset();
     PIXI.loader.add(brin).load(() => {
-      const {
-        texture,
-      } = PIXI.loader.resources[brin];
+      const { texture } = PIXI.loader.resources[brin];
       const rectangle = new PIXI.Rectangle(1082, 0, 593, 452);
       texture.frame = rectangle;
       this.brinSprite = new PIXI.Sprite(texture);
-      this.brinSprite.x = (this.container.offsetWidth / 2) - (593 / 2);
-      this.brinSprite.y = -40;
+      this.positionBrin();
       this.stage.addChild(this.brinSprite);
-      this.moveBrin();
+      // this.moveBrin();
     });
   }
 
@@ -138,7 +171,7 @@ export default class VideoBanner {
     for (let i = 0; i < this.debris.length; i += 1) {
       this.debris[i].x += 1 * this.debris[i].xySpeed;
       this.debris[i].y -= 1 * this.debris[i].xySpeed;
-      this.debris[i].rotation += (0.01 * this.debris[i].rotSpeed);
+      this.debris[i].rotation += 0.01 * this.debris[i].rotSpeed;
       if (this.outsideContainer(this.debris[i])) {
         this.positionDebris(this.debris[i]);
       }
@@ -146,10 +179,12 @@ export default class VideoBanner {
   }
 
   outsideContainer(sprite) {
-    if (sprite.y < -sprite.height
-        || sprite.y > (this.container.offsetHeight + sprite.height)
-        || sprite.x < -sprite.width
-        || sprite.x > (this.container.offsetWidth + sprite.width)) {
+    if (
+      sprite.y < -sprite.height ||
+      sprite.y > this.container.offsetHeight + sprite.height ||
+      sprite.x < -sprite.width ||
+      sprite.x > this.container.offsetWidth + sprite.width
+    ) {
       return true;
     }
     return false;
