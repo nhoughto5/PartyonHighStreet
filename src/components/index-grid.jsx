@@ -40,7 +40,7 @@ const DivWithImg = styled.div`
 
         object-fit: cover;
         opacity: 0.7;
-        filter: grayscale(1);
+        // filter: grayscale(1);
     }
 `
 

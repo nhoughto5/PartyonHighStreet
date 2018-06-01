@@ -43,7 +43,7 @@ export default class VideoBanner {
   }
 
   rePositionMoon() {
-    this.moonSprite.y = this.container.offsetHeight / 2;
+    this.moonSprite.y = this.container.offsetHeight * 0.65;
     this.moonSprite.x = -this.moonSprite.width;
   }
 
@@ -73,20 +73,26 @@ export default class VideoBanner {
     this.stage.addChild(sprite);
     this.clouds.push(sprite);
     sprite.scale.set(0.5, 0.5);
-    TweenMax.fromTo(sprite, Utility.getRandomIntFromRange(0, 5) + 25, {
-      x: -Utility.getRandomIntFromRange(700, 1200),
-      y: Utility.getRandomIntFromRange(-340, -110),
-      opacity: 0,
-    }, {
-      ease: SlowMo.ease.config(Utility.randomNumFromRange(0.1, 0.4), Utility.randomNumFromRange(0.1, 0.4), false),
-      x: 1000,
-      y: -Utility.getRandomIntFromRange(400, 550),
-      repeat: -1,
-      opacity: 1,
-    });
+    this.repositionCloud(sprite);
+  }
+
+  repositionCloud(sprite) {
+    sprite.x = -(sprite.width * Utility.getRandomIntFromRange(1, 2));
+    sprite.y = Utility.randomNumFromRange(this.container.offsetHeight * 0.2, this.container.offsetHeight * 0.8);
+  }
+
+  updateCloud() {
+    for (let i = 0; i < this.clouds.length; i += 1) {
+      if (this.outsideContainer(this.clouds[i])) {
+        this.repositionCloud(this.clouds[i]);
+      }
+      this.clouds[i].x += 1;
+      this.clouds[i].y -= 1.35;
+    }
   }
 
   addBrin() {
+    PIXI.loader.reset();
     PIXI.loader.add(brin).load(() => {
       const {
         texture,
@@ -117,11 +123,12 @@ export default class VideoBanner {
     });
     this.updateDebris();
     this.updateMoon();
+    this.updateCloud();
   }
 
   updateMoon() {
-    this.moonSprite.x += 0.25;
-    this.moonSprite.y -= 0.03;
+    this.moonSprite.x += 0.15;
+    this.moonSprite.y -= 0.05;
     if (this.outsideContainer(this.moonSprite)) {
       this.rePositionMoon(this.moonSprite);
     }
