@@ -36,7 +36,8 @@ export default class VideoBanner {
 
   addMoon() {
     this.moonSprite = PIXI.Sprite.fromImage(moon);
-    this.moonSprite.scale.set(0.125, 0.125);
+    this.moonSprite.scale.set(0.120, 0.120);
+    this.moonSprite.x = -100;
     this.moonSprite.y = this.container.offsetHeight / 2;
     this.stage.addChild(this.moonSprite);
   }
@@ -49,6 +50,7 @@ export default class VideoBanner {
   addDebris(image, scale, n = 1) {
     for (let i = 0; i < n; i += 1) {
       const sprite = PIXI.Sprite.fromImage(image);
+      scale *= Utility.randomNumFromRange(0.7, 1);
       sprite.scale.set(scale, scale);
       sprite.rotation = Utility.getRandomIntFromRange(0, 360);
       this.positionDebris(sprite);
@@ -62,7 +64,7 @@ export default class VideoBanner {
     sprite.rotSpeed = Utility.randomNumFromRange(1, 3);
     TweenMax.set(sprite, {
       x: Utility.getRandomIntFromRange(0, window.innerWidth),
-      y: this.container.offsetHeight + 100,
+      y: this.container.offsetHeight,
     });
   }
 
@@ -118,8 +120,8 @@ export default class VideoBanner {
   }
 
   updateMoon() {
-    this.moonSprite.x += 0.25 * 20;
-    this.moonSprite.y -= 0.03 * 20;
+    this.moonSprite.x += 0.25;
+    this.moonSprite.y -= 0.03;
     if (this.outsideContainer(this.moonSprite)) {
       this.rePositionMoon(this.moonSprite);
     }
@@ -140,7 +142,7 @@ export default class VideoBanner {
     if (sprite.y < -sprite.height
         || sprite.y > (this.container.offsetHeight + sprite.height)
         || sprite.x < -sprite.width
-        || sprite.x > (this.container.width + sprite.width)) {
+        || sprite.x > (this.container.offsetWidth + sprite.width)) {
       return true;
     }
     return false;
