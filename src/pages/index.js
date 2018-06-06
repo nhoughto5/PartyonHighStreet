@@ -22,11 +22,11 @@ class IndexPage extends React.Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    return !nextState.isFirstVisit;
+    return nextState.isFirstVisit != this.isFirstVisit || nextState.classes != this.classes;
   }
 
   componentDidMount() {
-    if(this.isFirstVisit){
+    if(true){
       console.log("dhsdfh");
       timer(4000).pipe(
         tap((x) => this.setState({
@@ -36,23 +36,28 @@ class IndexPage extends React.Component {
         delay(3000),
       ).subscribe(
         () => {
-          sessionStorage.setItem('shownTitle', true)
+          this.setState({
+            classes: 'title-animation-div animationFade title-no-show'
+          });
+          this.forceUpdate();
+          sessionStorage.setItem('shownTitle', true);
           this.setState({ 
-            classes: 'title-animation-div animationFade title-no-show',
             isFirstVisit: this.isFirstVisit,
-          })
+          });
         }
+
+        
       );
     }
   }
   
   render() {
-    console.log(this.state.classes);
+    console.log("Render: " + this.isFirstVisit);
     return (
       <div>
         {this.isFirstVisit && <TitlePage classes={this.state.classes} />}
         {this.isFirstVisit && this.state.showHome && <HomePage/>}
-        {!this.isFirstVisit && <HomePage/>}
+        {/* {!this.isFirstVisit && <HomePage/>} */}
       </div>
     );
   }
