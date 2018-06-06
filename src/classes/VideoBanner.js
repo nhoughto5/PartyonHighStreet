@@ -45,21 +45,11 @@ export default class VideoBanner {
   }
 
   resize() {
-    // const w = this.container.offsetWidth;
-    // const h = this.container.offsetHeight;
-    // this.renderer.view.style.width = `${w}px`;
-    // this.renderer.view.style.height = `${h}px`;
-    // this.renderer.resize(w,h);
-    // this.brinSprite.x += (this.origWidth - this.container.width);
-    if (window.innerWidth / window.innerHeight >= this.ratio) {
-        var w = window.innerHeight * this.ratio;
-        var h = window.innerHeight;
-    } else {
-        var w = window.innerWidth;
-        var h = window.innerWidth / this.ratio;
-    }
-    this.renderer.view.style.width = w + 'px';
-    this.renderer.view.style.height = h + 'px';
+    const w = this.container.offsetWidth;
+    const h = this.container.offsetHeight;
+    this.renderer.view.style.width = `${w}px`;
+    this.renderer.view.style.height = `${h}px`;
+    this.renderer.resize(w,h);
   }
 
   positionBrin() {
@@ -136,7 +126,7 @@ export default class VideoBanner {
       this.brinSprite = new PIXI.Sprite(texture);
       this.positionBrin();
       this.stage.addChild(this.brinSprite);
-      // this.moveBrin();
+      this.moveBrin();
     });
   }
 
