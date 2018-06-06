@@ -22,5 +22,6 @@ module.exports = {
     ],    
     "rules": {
         "no-param-reassign": 0,
+        "arrow-parens": 0,
     }
 };
