@@ -16,22 +16,21 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount() {
-    // timer(4000).pipe(
-    //   tap((x) => this.setState({
-    //     classes: 'title-animation-div animationFade',
-    //     showHome: true
-    //   })),
-    //   delay(3000)
-    // ).subscribe(
-    //   () => this.setState({ classes: 'title-animation-div animationFade title-no-show' })
-    // );
+    timer(4000).pipe(
+      tap((x) => this.setState({
+        classes: 'title-animation-div animationFade',
+        showHome: true
+      })),
+      delay(3000)
+    ).subscribe(
+      () => this.setState({ classes: 'title-animation-div animationFade title-no-show' })
+    );
   }
   
   render() {
     return (
       <div>
-        {/* <TitlePage classes={this.state.classes} /> */}
-        <HomePage/>
+        <TitlePage classes={this.state.classes} />
         {this.state.showHome && <HomePage/>}
       </div>
     );
