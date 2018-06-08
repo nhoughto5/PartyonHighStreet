@@ -52,7 +52,6 @@ class IndexPage extends React.Component {
   }
   
   render() {
-    console.log("Classes: " + this.state.classes);
     return (
       <div>
         {this.isFirstVisit && <TitlePage classes={this.state.classes} />}
