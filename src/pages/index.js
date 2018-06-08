@@ -22,7 +22,7 @@ class IndexPage extends React.Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    return nextState.isFirstVisit != this.isFirstVisit || nextState.classes != this.classes;
+    return nextState.isFirstVisit == true || this.isFirstVisit == true;
   }
 
   componentDidMount() {
@@ -57,7 +57,7 @@ class IndexPage extends React.Component {
       <div>
         {this.isFirstVisit && <TitlePage classes={this.state.classes} />}
         {this.isFirstVisit && this.state.showHome && <HomePage/>}
-        {/* {!this.isFirstVisit && <HomePage/>} */}
+        {!this.isFirstVisit && <HomePage/>}
       </div>
     );
   }
