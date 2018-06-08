@@ -85,19 +85,3 @@ p {
   justify-content: center;
   align-items: center;
 }
-
-.title-animation-div2 {
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -50;
-  overflow: hidden;
-  background-color:white;
-
-  transition: all 3s ease;
-  justify-content: center;
-  align-items: center;
-}

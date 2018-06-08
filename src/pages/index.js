@@ -38,7 +38,7 @@ class IndexPage extends React.Component {
       ).subscribe(
         () => {
           this.setState({
-            classes: 'title-animation-div2 animationFade title-no-show'
+            classes: 'title-animation-div animationFade title-no-show'
           });
           this.forceUpdate();
           sessionStorage.setItem('shownTitle', true);
