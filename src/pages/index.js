@@ -33,12 +33,14 @@ class IndexPage extends React.Component {
         tap((x) => this.setState({
           classes: 'title-animation-div animationFade',
           showHome: true,
+          shouldRenderTitle: true,
         })),
         delay(3000),
       ).subscribe(
         () => {
           this.setState({
-            classes: 'title-animation-div animationFade title-no-show'
+            classes: 'title-animation-div animationFade title-no-show',
+            shouldRenderTitle: false,
           });
           this.forceUpdate();
           sessionStorage.setItem('shownTitle', true);
@@ -48,13 +50,12 @@ class IndexPage extends React.Component {
         }
       );
     }
-
   }
   
   render() {
     return (
       <div>
-        {this.isFirstVisit && <TitlePage classes={this.state.classes} />}
+        {this.isFirstVisit && <TitlePage classes={this.state.classes} shouldRender={this.state.shouldRenderTitle} />}
         {this.isFirstVisit && this.state.showHome && <HomePage/>}
         {!this.isFirstVisit && <HomePage/>}
       </div>
