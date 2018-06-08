@@ -45,10 +45,9 @@ class IndexPage extends React.Component {
             isFirstVisit: this.isFirstVisit,
           });
         }
-
-        
       );
     }
+
   }
   
   render() {
