@@ -1,6 +1,4 @@
 import React from 'react';
-import Link from 'gatsby-link';
-import { storage } from 'react-easy-params'
 import HomePage from '../components/home-page';
 import TitlePage from '../components/title-page';
 import { timer } from 'rxjs';
@@ -13,12 +11,15 @@ class IndexPage extends React.Component {
     this.state = {
       classes: '',
       showHome: false,
-      isFirstVisit: this.isFirstVisit
     };
   }
 
   get isFirstVisit() {
-    return sessionStorage.getItem('shownTitle') == null;
+    if(typeof sessionStorage !== 'undefined'){
+      return sessionStorage.getItem('shownTitle') == null;
+    }else {
+      return false;
+    }
   }
 
   shouldComponentUpdate(nextProps, nextState) {
