@@ -38,7 +38,7 @@ class IndexPage extends React.Component {
       ).subscribe(
         () => {
           this.setState({
-            classes: 'title-animation-div animationFade title-no-show'
+            classes: 'title-animation-div2 animationFade title-no-show'
           });
           this.forceUpdate();
           sessionStorage.setItem('shownTitle', true);
@@ -52,7 +52,7 @@ class IndexPage extends React.Component {
   }
   
   render() {
-    console.log("Render: " + this.isFirstVisit);
+    console.log("Classes: " + this.state.classes);
     return (
       <div>
         {this.isFirstVisit && <TitlePage classes={this.state.classes} />}

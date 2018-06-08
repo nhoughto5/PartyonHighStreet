@@ -9,7 +9,6 @@ const AnimationDiv = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 50;
     overflow: hidden;
     background-color:white;
 
