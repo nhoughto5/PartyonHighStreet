@@ -26,6 +26,7 @@ export default class VideoBanner {
     this.clouds = [];
     this.debris = [];
     this.origWidth = this.container.offsetWidth;
+    this.normalPageSize = 1920;
     this.addMoon();
     this.addDebris(leaf1, 0.01, 5);
     this.addDebris(snowflake1, 0.1, 5);
@@ -45,16 +46,30 @@ export default class VideoBanner {
   }
 
   resize() {
-    const w = this.container.offsetWidth;
-    const h = this.container.offsetHeight;
-    this.renderer.view.style.width = `${w}px`;
-    this.renderer.view.style.height = `${h}px`;
-    this.renderer.resize(w,h);
+    // if (window.innerWidth / window.innerHeight >= this.ratio) {
+    //   var w = window.innerHeight * this.ratio;
+    //   var h = window.innerHeight;
+    // } else {
+    //   var w = window.innerWidth;
+    //   var h = window.innerWidth / this.ratio;
+    // }
+    // this.renderer.view.style.width = w + 'px';
+    // this.renderer.view.style.height = h + 'px';
+    this.renderer.view.style.width = this.container.offsetWidth;
+    this.renderer.view.style.height = this.container.offsetHeight;
+    if (this.brinSprite) {
+      // this.brinSprite.scale.set(w / this.origWidth, w / this.origWidth);
+      let scale = window.innerWidth / this.normalPageSize;
+      this.brinSprite.scale.set(scale, scale);
+      // this.brinSprite.position.set(this.renderer.width / 2, this.renderer.height / 2);
+      this.positionBrin();
+    }
   }
 
   positionBrin() {
-    this.brinSprite.x = this.container.offsetWidth / 2 - 593 / 2;
-    this.brinSprite.y = -40;
+    if(!this.brinSprite) return;
+    this.brinSprite.x = this.container.offsetWidth / 2 - this.brinSprite.width / 2;
+    this.brinSprite.y = this.container.offsetHeight / 2 - this.brinSprite.height / 2;
   }
 
   addMoon() {
@@ -124,20 +139,23 @@ export default class VideoBanner {
       const rectangle = new PIXI.Rectangle(1082, 0, 593, 452);
       texture.frame = rectangle;
       this.brinSprite = new PIXI.Sprite(texture);
-      this.positionBrin();
+      let scale = window.innerWidth / this.normalPageSize;
+      this.brinSprite.scale.set(scale, scale);
       this.stage.addChild(this.brinSprite);
+      this.positionBrin();
       this.moveBrin();
+      this.container.style.height = 'auto';
     });
   }
 
   moveBrin() {
-    TweenMax.to(this.brinSprite, 2, {
-      x: '+= 20px',
-      y: '+= 20px',
-      ease: Power2.easeInOut,
-      yoyo: true,
-      repeat: -1,
-    });
+    // TweenMax.to(this.brinSprite, 2, {
+    //   x: '+= 20px',
+    //   y: '+= 20px',
+    //   ease: Power2.easeInOut,
+    //   yoyo: true,
+    //   repeat: -1,
+    // });
   }
 
   animate() {
