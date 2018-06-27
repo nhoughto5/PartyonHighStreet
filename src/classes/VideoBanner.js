@@ -1,5 +1,5 @@
 import * as PIXI from 'pixi.js';
-import { TweenMax, Power2, SlowMo } from 'gsap';
+import { TweenMax } from 'gsap';
 import brin from '../images/brin_sprite.png';
 import Utility from './Utility';
 import cloud1 from '../images/cloud1.png';
@@ -35,7 +35,6 @@ export default class VideoBanner {
     this.addCloud(cloud2);
     this.addCloud(cloud3);
     this.attachListeners();
-    // this.resize();
     this.app.ticker.add(this.animate, this);
   }
 
@@ -138,7 +137,6 @@ export default class VideoBanner {
       let scale = window.innerWidth / this.normalPageSize;
       this.brinSprite.scale.set(scale, scale);
       this.stage.addChild(this.brinSprite);
-      // this.positionBrin();
       this.brinXSpeed = 1;
       this.brinYSpeed = 1;
       this.brinAngle = 0;
@@ -150,7 +148,6 @@ export default class VideoBanner {
     if(!this.brinSprite) return;
     this.brinSprite.x = (this.container.offsetWidth / 2 - this.brinSprite.width / 2) + 40 * Math.sin(this.brinAngle * 0.02);
     this.brinSprite.y = (this.container.offsetHeight / 2 - this.brinSprite.height / 2) + 40 * Math.sin(this.brinAngle * 0.02);
-    console.log(`Renderer: ${this.renderer.height}`);
     this.brinAngle += delta;
   }
 
