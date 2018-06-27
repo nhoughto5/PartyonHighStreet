@@ -35,8 +35,8 @@ export default class VideoBanner {
     this.addCloud(cloud2);
     this.addCloud(cloud3);
     this.attachListeners();
-    this.resize();
-    this.animate();
+    // this.resize();
+    this.app.ticker.add(this.animate, this);
   }
 
   attachListeners() {
@@ -46,22 +46,18 @@ export default class VideoBanner {
   }
 
   resize() {
-    // if (window.innerWidth / window.innerHeight >= this.ratio) {
-    //   var w = window.innerHeight * this.ratio;
-    //   var h = window.innerHeight;
-    // } else {
-    //   var w = window.innerWidth;
-    //   var h = window.innerWidth / this.ratio;
-    // }
-    // this.renderer.view.style.width = w + 'px';
-    // this.renderer.view.style.height = h + 'px';
-    this.renderer.view.style.width = this.container.offsetWidth;
-    this.renderer.view.style.height = this.container.offsetHeight;
+    if (window.innerWidth / window.innerHeight >= this.ratio) {
+      var w = window.innerHeight * this.ratio;
+      var h = window.innerHeight;
+    } else {
+      var w = window.innerWidth;
+      var h = window.innerWidth / this.ratio;
+    }
+    this.renderer.view.style.width = w + 'px';
+    this.renderer.view.style.height = h + 'px';
     if (this.brinSprite) {
-      // this.brinSprite.scale.set(w / this.origWidth, w / this.origWidth);
-      let scale = window.innerWidth / this.normalPageSize;
+      const scale = window.innerWidth / this.normalPageSize;
       this.brinSprite.scale.set(scale, scale);
-      // this.brinSprite.position.set(this.renderer.width / 2, this.renderer.height / 2);
       this.positionBrin();
     }
   }
@@ -142,29 +138,27 @@ export default class VideoBanner {
       let scale = window.innerWidth / this.normalPageSize;
       this.brinSprite.scale.set(scale, scale);
       this.stage.addChild(this.brinSprite);
-      this.positionBrin();
-      this.moveBrin();
+      // this.positionBrin();
+      this.brinXSpeed = 1;
+      this.brinYSpeed = 1;
+      this.brinAngle = 0;
       this.container.style.height = 'auto';
     });
   }
 
-  moveBrin() {
-    // TweenMax.to(this.brinSprite, 2, {
-    //   x: '+= 20px',
-    //   y: '+= 20px',
-    //   ease: Power2.easeInOut,
-    //   yoyo: true,
-    //   repeat: -1,
-    // });
+  moveBrin(delta) {
+    if(!this.brinSprite) return;
+    this.brinSprite.x = (this.container.offsetWidth / 2 - this.brinSprite.width / 2) + 40 * Math.sin(this.brinAngle * 0.02);
+    this.brinSprite.y = (this.container.offsetHeight / 2 - this.brinSprite.height / 2) + 40 * Math.sin(this.brinAngle * 0.02);
+    console.log(`Renderer: ${this.renderer.height}`);
+    this.brinAngle += delta;
   }
 
-  animate() {
-    requestAnimationFrame(() => {
-      this.animate();
-    });
+  animate(delta) {
     this.updateDebris();
     this.updateMoon();
     this.updateCloud();
+    this.moveBrin(delta);
   }
 
   updateMoon() {
