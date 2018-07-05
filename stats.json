@@ -1,24 +1,32 @@
 {
   "assetsByChunkName": {
+    "component---src-templates-news-post-js": [
+      "component---src-templates-news-post-js-75c57ac42af9a412a969.js",
+      "component---src-templates-news-post-js-75c57ac42af9a412a969.js.map"
+    ],
+    "component---src-pages-news-jsx": [
+      "component---src-pages-news-jsx-856698a2058b9a7990e5.js",
+      "component---src-pages-news-jsx-856698a2058b9a7990e5.js.map"
+    ],
     "path---second-post": [
       "path---second-post-b63d192601885f6d500f.js",
       "path---second-post-b63d192601885f6d500f.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-b2c4f0da966a5b27e30c.js",
-      "component---src-pages-index-js-b2c4f0da966a5b27e30c.js.map"
+      "component---src-pages-index-js-af7fe37fe5a3e5c94f4b.js",
+      "component---src-pages-index-js-af7fe37fe5a3e5c94f4b.js.map"
     ],
     "path---": [
       "path----988ddd1ff3fa5cbf8797.js",
       "path----988ddd1ff3fa5cbf8797.js.map"
     ],
     "component---src-layouts-index-jsx": [
-      "component---src-layouts-index-jsx-4f996659c4d3acf94992.js",
-      "component---src-layouts-index-jsx-4f996659c4d3acf94992.js.map"
+      "component---src-layouts-index-jsx-2ee4aaf009ed9a4274a5.js",
+      "component---src-layouts-index-jsx-2ee4aaf009ed9a4274a5.js.map"
     ],
     "path---first-post": [
-      "path---first-post-4e1504d5ad8eecd3ac47.js",
-      "path---first-post-4e1504d5ad8eecd3ac47.js.map"
+      "path---first-post-6fb7f7a2dc83220ac707.js",
+      "path---first-post-6fb7f7a2dc83220ac707.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -40,17 +48,17 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "component---src-templates-post-js": [
-      "component---src-templates-post-js-75c57ac42af9a412a969.js",
-      "component---src-templates-post-js-75c57ac42af9a412a969.js.map"
+    "path---news": [
+      "path---news-e9fc094e954ef1ac3b4e.js",
+      "path---news-e9fc094e954ef1ac3b4e.js.map"
     ],
     "component---src-pages-videos-jsx": [
       "component---src-pages-videos-jsx-253a20f8c2c3cfecef26.js",
       "component---src-pages-videos-jsx-253a20f8c2c3cfecef26.js.map"
     ],
     "app": [
-      "app-ea5dd7254e3da3f406cf.js",
-      "app-ea5dd7254e3da3f406cf.js.map"
+      "app-342056a141125030b2c8.js",
+      "app-342056a141125030b2c8.js.map"
     ],
     "path---videos": [
       "path---videos-a0e39f21c11f6a62c5ab.js",
