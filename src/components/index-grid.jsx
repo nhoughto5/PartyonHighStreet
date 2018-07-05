@@ -11,7 +11,7 @@ const GridWrapper = styled.div`
     width: 100%;
     max-width: 1500px;
     margin: 1rem auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
 
     @media screen and (max-width: 700px) {
         margin: 2rem auto;
@@ -63,7 +63,7 @@ const Overlay = styled.div`
 `;
 
 const HalfWidth = DivWithImg.extend`
-    width: 48%;
+    width: 49%;
     height: 600px;
 
     @media screen and (max-width: 700px) {
@@ -100,8 +100,8 @@ const StackedItem = DivWithImg.extend`
 `;
 
 const ThirdWidth = DivWithImg.extend`
-    width: 31%;
-    height: 250px;
+    width: 35%;
+    height: auto;
 
     @media screen and (max-width: 700px) {
         width: 100%;
@@ -127,7 +127,7 @@ const Grid = () => (
             </HalfWidth>
             <HalfStacked>
                 <StackedItem>
-                    <img src={bandImage2} alt="About The Band"/>
+                    <img className="newsImage" src={bandImage2} alt="About The Band"/>
                     <Overlay><h2>News</h2></Overlay>
                 </StackedItem>
                 <StackedItem>
@@ -135,8 +135,6 @@ const Grid = () => (
                     <Overlay><h2>Shows</h2></Overlay>
                 </StackedItem>
             </HalfStacked>
-        {/* </FlexContainer>
-        <FlexContainer> */}
             <ThirdWidth>
                 <img src={bandImage4} alt="About The Band"/>
                 <Overlay><h2>Images</h2></Overlay>
