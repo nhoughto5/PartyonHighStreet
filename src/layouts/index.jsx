@@ -10,6 +10,7 @@ const Layout = ({ children, data }) => (
     <Helmet>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#ef8310" />
       <title>TPOHS</title>
       <link rel="shortcut icon" href={favicon} />
       <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600" rel="stylesheet"/>

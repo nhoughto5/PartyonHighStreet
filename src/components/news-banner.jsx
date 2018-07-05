@@ -35,14 +35,13 @@ const Box = styled.div`
     border: 2px solid purple;
 `;
 
-const AboutPageBanner = () => (
+const NewsPageBanner = () => (
     <BannerWrapper>
         <Banner></Banner>
         <Overlay>
-            <h1>Meet the Band</h1>
+            <h1>News</h1>
         </Overlay>
     </BannerWrapper>
 );
 
-export default AboutPageBanner;
-
+export default NewsPageBanner;

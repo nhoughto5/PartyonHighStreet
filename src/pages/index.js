@@ -1,6 +1,7 @@
 import React from 'react';
 import HomePage from '../components/home-page';
 import TitlePage from '../components/title-page';
+import Utility from '../classes/Utility';
 import { timer } from 'rxjs';
 import { tap, delay } from 'rxjs/operators';
 
@@ -12,6 +13,8 @@ class IndexPage extends React.Component {
       classes: '',
       showHome: false,
     };
+    this.isMobile = Utility.isMobile();
+    console.log(`Is Mobile: ${this.isMobile}`);
   }
 
   get isFirstVisit() {
@@ -28,7 +31,6 @@ class IndexPage extends React.Component {
 
   componentDidMount() {
     if(true){
-      console.log("dhsdfh");
       timer(4000).pipe(
         tap((x) => this.setState({
           classes: 'title-animation-div animationFade',
@@ -55,8 +57,8 @@ class IndexPage extends React.Component {
   render() {
     return (
       <div>
-        {this.isFirstVisit && <TitlePage classes={this.state.classes} shouldRender={this.state.shouldRenderTitle} />}
-        {this.isFirstVisit && this.state.showHome && <HomePage/>}
+        {!this.isMobile && this.isFirstVisit && <TitlePage classes={this.state.classes} shouldRender={this.state.shouldRenderTitle} />}
+        {!this.isMobile && this.isFirstVisit && this.state.showHome && <HomePage/>}
         {!this.isFirstVisit && <HomePage/>}
       </div>
     );
