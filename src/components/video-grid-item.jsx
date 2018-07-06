@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from "styled-components";
-// import "./videos.scss"
+import styled from 'styled-components';
+
 const VideoFlexGridItem = styled.div`
   width: 48%;
 `;
@@ -19,9 +19,9 @@ const ResponsiveWrap = styled.div`
       width: 100%;
       height: 100%;
   }
-`
+`;
 
-const VideoGridItem = ({srcURL}) => (
+const VideoGridItem = ({ srcURL }) => (
     <VideoFlexGridItem>
         <ResponsiveWrap>
           <iframe src={srcURL} frameBorder="0" allowFullScreen></iframe>
@@ -30,3 +30,4 @@ const VideoGridItem = ({srcURL}) => (
 );
 
 export default VideoGridItem;
+

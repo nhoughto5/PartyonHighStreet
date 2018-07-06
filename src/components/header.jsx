@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import styled from "styled-components"
+import React from 'react';
+import Link from 'gatsby-link';
+import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
   display: flex;
@@ -48,18 +48,18 @@ const RightLinks = styled.div`
   }
 `;
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <HeaderWrapper>
     <LeftLogo>
       <Link to='/'>The Party On High Street</Link>
     </LeftLogo>
     <RightLinks>
       <Link to='/about/'>About</Link>
-      <Link to='/videos/'>Videos</Link>
+      <Link to='/video/'>Videos</Link>
       <Link to='/'>Music</Link>
       <Link to='/news/'>News</Link>
     </RightLinks>
   </HeaderWrapper>
-)
+);
 
-export default Header
+export default Header;
