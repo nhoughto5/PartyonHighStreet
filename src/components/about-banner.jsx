@@ -12,6 +12,7 @@ const Banner = styled.div`
     height: 50vh;
     background-image: url(${bgImage});
     background-size: cover;
+    max-height: 400px;
 `;
 
 const Overlay = styled.div`

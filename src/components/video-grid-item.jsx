@@ -11,7 +11,7 @@ const ResponsiveWrap = styled.div`
   padding-bottom: 56.25%;
   padding-top: 35px;
   height: 0;
-
+  
   iframe {
       position: absolute;
       top:0;
@@ -30,4 +30,3 @@ const VideoGridItem = ({ srcURL }) => (
 );
 
 export default VideoGridItem;
-

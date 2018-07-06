@@ -12,6 +12,7 @@ const Banner = styled.div`
     height: 50vh;
     background-image: url(${bgImage});
     background-size: cover;
+    max-height: 400px;
 `;
 
 const Overlay = styled.div`
@@ -26,13 +27,6 @@ const Overlay = styled.div`
     justify-content: center;
     align-items: center;
     color: white;
-`;
-
-const Box = styled.div`
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    border: 2px solid purple;
 `;
 
 const NewsPageBanner = () => (

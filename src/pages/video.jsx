@@ -12,6 +12,7 @@ const Banner = styled.div`
     height: 50vh;
     background-image: url(${bgImage});
     background-size: cover;
+    max-height: 400px;
 `;
 
 const Overlay = styled.div`
@@ -30,13 +31,13 @@ const Overlay = styled.div`
 
 const VideoPage = () => (
     <div>
-      <BannerWrapper>
-        <Banner></Banner>
-        <Overlay>
-            <h1>Videos</h1>
-        </Overlay>
-    </BannerWrapper>
-      <Videos/>
+        <BannerWrapper>
+            <Banner></Banner>
+            <Overlay>
+                <h1>Videos</h1>
+            </Overlay>
+        </BannerWrapper>
+        <Videos />
     </div>
 );
 

@@ -46,7 +46,6 @@ class VideoGrid extends React.Component {
         </VideoGridWrap>
     );
   }
-
 }
 
 export default VideoGrid;
