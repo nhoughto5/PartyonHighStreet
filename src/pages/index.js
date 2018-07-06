@@ -39,7 +39,6 @@ class IndexPage extends React.Component {
         delay(3000),
       ).subscribe(
         () => {
-          console.log("No Show");
           this.setState({
             classes: 'title-no-show title-animation-div animationFade',
             shouldRenderTitle: false,
