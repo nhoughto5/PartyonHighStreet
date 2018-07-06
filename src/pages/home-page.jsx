@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '../components/index-grid';
-import BrinBannerAnim from '../components/animations/brin-dive-anim';
+import BrinBannerAnim from '../components/brin-dive-anim';
 
 const HomePage = () => (
   <div>

@@ -1,6 +1,5 @@
 import { TweenLite, Power1 } from 'gsap';
-import * as PIXI from 'pixi.js';
-import spriteSheet from '../../images/brin_sprite.png';
+import spriteSheet from '../images/brin_sprite.png';
 
 export default class TitleAnimation {
   constructor() {
@@ -53,6 +52,4 @@ export default class TitleAnimation {
       this.currentFrame = (this.currentFrame + 1) % this.frames.length;
     }, 100);
   }
-
-
 }

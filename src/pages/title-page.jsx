@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import TitleAnimation from '../components/animations/title-sprite';
+import TitleAnimation from '../classes/title-sprite';
 
 const AnimationDiv = styled.div`
     height: 100%;

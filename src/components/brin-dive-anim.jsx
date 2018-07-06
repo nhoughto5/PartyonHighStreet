@@ -1,6 +1,7 @@
 import React from 'react';
-import styled from "styled-components";
-import BannerAnim from '../../classes/VideoBanner';
+import styled from 'styled-components';
+import BannerAnim from '../classes/VideoBanner';
+
 const CanvasBanner = styled.div`
     margin: 0 2rem;
     height: 35rem;
@@ -17,20 +18,20 @@ const CanvasBanner = styled.div`
 `;
 
 class BrinDiveAnim extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    componentDidMount() {
-        this.bannerAnim = new BannerAnim();
-    }
+  componentDidMount() {
+    this.bannerAnim = new BannerAnim();
+  }
 
-    render() {
-        return (
-            <CanvasBanner id={`videoBannerContainer`}>
+  render() {
+    return (
+            <CanvasBanner id={'videoBannerContainer'}>
             </CanvasBanner>
-        );
-    }
+    );
+  }
 }
 
 export default BrinDiveAnim;
