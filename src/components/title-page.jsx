@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 import TitleAnimation from './animations/title-sprite';
 
 const AnimationDiv = styled.div`
@@ -23,7 +23,6 @@ const AnimationDiv = styled.div`
 `;
 
 class TitlePage extends React.Component {
-
   constructor(props) {
     super(props);
   }
