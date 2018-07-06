@@ -1,6 +1,6 @@
 import React from 'react';
-import HomePage from '../components/home-page';
-import TitlePage from '../components/title-page';
+import HomePage from './home-page';
+import TitlePage from './title-page';
 import Utility from '../classes/Utility';
 import { timer } from 'rxjs';
 import { tap, delay } from 'rxjs/operators';

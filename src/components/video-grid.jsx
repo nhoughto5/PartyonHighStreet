@@ -1,7 +1,6 @@
 import React from 'react';
-import styled from "styled-components";
-import VideoGridItem from "./video-grid-item";
-
+import styled from 'styled-components';
+import VideoGridItem from './video-grid-item';
 
 const VideoGridWrap = styled.div`
   width: 100%;
@@ -15,16 +14,15 @@ const VideoFlexGridTwo = styled.div`
 `;
 
 class VideoGrid extends React.Component {
-
   constructor(props) {
     super(props);
   }
 
-  componentDidMount(){
+  componentDidMount() {
 
   }
 
-  render(){
+  render() {
     return (
         <VideoGridWrap>
           <VideoFlexGridTwo>
@@ -47,7 +45,7 @@ class VideoGrid extends React.Component {
           </VideoFlexGridTwo>
         </VideoGridWrap>
     );
-  } 
+  }
 
 }
 

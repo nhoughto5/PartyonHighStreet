@@ -1,18 +1,18 @@
 import React from 'react';
-import Videos from '../components/video/index';
-import styled from "styled-components";
+import styled from 'styled-components';
+import Videos from '../components/video-grid';
 import bgImage from '../images/trio_vans.jpg';
 
 const BannerWrapper = styled.div`
     margin: 0 2rem;
     position: relative;
-`
+`;
 
 const Banner = styled.div`
     height: 50vh;
     background-image: url(${bgImage});
     background-size: cover;
-`
+`;
 
 const Overlay = styled.div`
     position: absolute;
@@ -26,7 +26,7 @@ const Overlay = styled.div`
     justify-content: center;
     align-items: center;
     color: white;
-`
+`;
 
 const VideoPage = () => (
     <div>
