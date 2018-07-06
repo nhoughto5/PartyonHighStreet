@@ -5,64 +5,80 @@
       "component---src-templates-news-post-js-75c57ac42af9a412a969.js.map"
     ],
     "component---src-pages-news-jsx": [
-      "component---src-pages-news-jsx-d6a80207463edcd063c0.js",
-      "component---src-pages-news-jsx-d6a80207463edcd063c0.js.map"
+      "component---src-pages-news-jsx-60028773bef0c37f26a2.js",
+      "component---src-pages-news-jsx-60028773bef0c37f26a2.js.map"
     ],
     "path---second-post": [
       "path---second-post-04ad46baf816d362ce79.js",
       "path---second-post-04ad46baf816d362ce79.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-6f79d2f26922b20d17af.js",
-      "component---src-pages-index-js-6f79d2f26922b20d17af.js.map"
+      "component---src-pages-index-js-1f3ecfa1442d5843cd6c.js",
+      "component---src-pages-index-js-1f3ecfa1442d5843cd6c.js.map"
     ],
     "path---": [
       "path----988ddd1ff3fa5cbf8797.js",
       "path----988ddd1ff3fa5cbf8797.js.map"
     ],
     "component---src-layouts-index-jsx": [
-      "component---src-layouts-index-jsx-10db3490515ce5852436.js",
-      "component---src-layouts-index-jsx-10db3490515ce5852436.js.map"
+      "component---src-layouts-index-jsx-33bb63a2621d52fe338e.js",
+      "component---src-layouts-index-jsx-33bb63a2621d52fe338e.js.map"
     ],
     "path---first-post": [
       "path---first-post-100d5ba67a419162151a.js",
       "path---first-post-100d5ba67a419162151a.js.map"
+    ],
+    "path---video": [
+      "path---video-a0e39f21c11f6a62c5ab.js",
+      "path---video-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---title-page": [
+      "path---title-page-a0e39f21c11f6a62c5ab.js",
+      "path---title-page-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-about-jsx": [
-      "component---src-pages-about-jsx-43eac3766d1bf89e1d38.js",
-      "component---src-pages-about-jsx-43eac3766d1bf89e1d38.js.map"
+      "component---src-pages-about-jsx-f3cc2eda47b5f9f780a4.js",
+      "component---src-pages-about-jsx-f3cc2eda47b5f9f780a4.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "commons": [
-      "commons-6feb04c32173615b9d6c.js",
-      "commons-6feb04c32173615b9d6c.js.map"
+      "commons-34902dd67309c5d4ba4b.js",
+      "commons-34902dd67309c5d4ba4b.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-video-jsx": [
+      "component---src-pages-video-jsx-f5c50b6a701f405c035d.js",
+      "component---src-pages-video-jsx-f5c50b6a701f405c035d.js.map"
+    ],
+    "component---src-pages-home-page-jsx": [
+      "component---src-pages-home-page-jsx-bc2331f973a63032e011.js",
+      "component---src-pages-home-page-jsx-bc2331f973a63032e011.js.map"
+    ],
+    "component---src-pages-title-page-jsx": [
+      "component---src-pages-title-page-jsx-885568caa568fbbce683.js",
+      "component---src-pages-title-page-jsx-885568caa568fbbce683.js.map"
+    ],
     "path---news": [
       "path---news-87d8f15def3ad8e01304.js",
       "path---news-87d8f15def3ad8e01304.js.map"
     ],
-    "component---src-pages-videos-jsx": [
-      "component---src-pages-videos-jsx-6d953b3e8c0f653571c6.js",
-      "component---src-pages-videos-jsx-6d953b3e8c0f653571c6.js.map"
-    ],
     "app": [
-      "app-76deb93e6ccc595d95be.js",
-      "app-76deb93e6ccc595d95be.js.map"
+      "app-cdf059f5d2ddff78c527.js",
+      "app-cdf059f5d2ddff78c527.js.map"
     ],
-    "path---videos": [
-      "path---videos-a0e39f21c11f6a62c5ab.js",
-      "path---videos-a0e39f21c11f6a62c5ab.js.map"
+    "path---home-page": [
+      "path---home-page-a0e39f21c11f6a62c5ab.js",
+      "path---home-page-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
