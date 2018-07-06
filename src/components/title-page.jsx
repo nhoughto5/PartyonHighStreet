@@ -12,30 +12,35 @@ const AnimationDiv = styled.div`
     z-index: 50;
     overflow: hidden;
     background-color:white;
-
     transition: all 3s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 `;
 
 class TitlePage extends React.Component {
 
-    constructor(props){
-        super(props);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    componentDidMount() {
-        this.anim = new TitleAnimation();
-    }
+  componentDidMount() {
+    this.anim = new TitleAnimation();
+  }
 
-    render(){
-        return (
+  render() {
+    return (
             <AnimationDiv className={this.props.classes}>
-                <canvas className="spriteCanvas" id="spriteCanvas"/>
+                <div className="centered">
+                    <canvas className="spriteCanvas" id="spriteCanvas" />
+                </div>
             </AnimationDiv>
-        );
-    }
+    );
+  }
 }
 
 export default TitlePage;

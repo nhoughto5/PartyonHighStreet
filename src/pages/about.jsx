@@ -1,6 +1,4 @@
 import React from 'react';
-import Link from 'gatsby-link';
-
 import AboutBanner from '../components/about-banner';
 import AboutGrid from '../components/about-grid';
 

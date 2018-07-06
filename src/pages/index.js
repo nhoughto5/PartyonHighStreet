@@ -13,8 +13,6 @@ class IndexPage extends React.Component {
       classes: '',
       showHome: false,
     };
-    this.isMobile = Utility.isMobile();
-    console.log(`Is Mobile: ${this.isMobile}`);
   }
 
   get isFirstVisit() {
@@ -30,6 +28,7 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount() {
+    this.isMobile = Utility.isMobile();
     if(true){
       timer(4000).pipe(
         tap((x) => this.setState({
@@ -40,8 +39,9 @@ class IndexPage extends React.Component {
         delay(3000),
       ).subscribe(
         () => {
+          console.log("No Show");
           this.setState({
-            classes: 'title-animation-div animationFade title-no-show',
+            classes: 'title-no-show title-animation-div animationFade',
             shouldRenderTitle: false,
           });
           this.forceUpdate();
