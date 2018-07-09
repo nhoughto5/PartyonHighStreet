@@ -21,8 +21,8 @@
       "path----988ddd1ff3fa5cbf8797.js.map"
     ],
     "component---src-layouts-index-jsx": [
-      "component---src-layouts-index-jsx-33bb63a2621d52fe338e.js",
-      "component---src-layouts-index-jsx-33bb63a2621d52fe338e.js.map"
+      "component---src-layouts-index-jsx-a84854a3eec33cb3b4fd.js",
+      "component---src-layouts-index-jsx-a84854a3eec33cb3b4fd.js.map"
     ],
     "path---first-post": [
       "path---first-post-100d5ba67a419162151a.js",
@@ -60,6 +60,10 @@
       "component---src-pages-video-jsx-f5c50b6a701f405c035d.js",
       "component---src-pages-video-jsx-f5c50b6a701f405c035d.js.map"
     ],
+    "path---music": [
+      "path---music-a0e39f21c11f6a62c5ab.js",
+      "path---music-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-pages-home-page-jsx": [
       "component---src-pages-home-page-jsx-bc2331f973a63032e011.js",
       "component---src-pages-home-page-jsx-bc2331f973a63032e011.js.map"
@@ -73,12 +77,16 @@
       "path---news-87d8f15def3ad8e01304.js.map"
     ],
     "app": [
-      "app-cdf059f5d2ddff78c527.js",
-      "app-cdf059f5d2ddff78c527.js.map"
+      "app-46d35ad20da288154ea0.js",
+      "app-46d35ad20da288154ea0.js.map"
     ],
     "path---home-page": [
       "path---home-page-a0e39f21c11f6a62c5ab.js",
       "path---home-page-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-music-jsx": [
+      "component---src-pages-music-jsx-6f8df848cec5e669cded.js",
+      "component---src-pages-music-jsx-6f8df848cec5e669cded.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
