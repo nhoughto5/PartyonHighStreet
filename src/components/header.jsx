@@ -56,7 +56,7 @@ const Header = () => (
     <RightLinks>
       <Link to='/about/'>About</Link>
       <Link to='/video/'>Videos</Link>
-      <Link to='/'>Music</Link>
+      <Link to='/music/'>Music</Link>
       <Link to='/news/'>News</Link>
     </RightLinks>
   </HeaderWrapper>
