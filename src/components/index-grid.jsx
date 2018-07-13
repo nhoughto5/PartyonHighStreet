@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import Link from 'gatsby-link';
 import bandImage from '../images/band.jpg';
 import bandImage2 from '../images/band1.jpg';
 import bandImage3 from '../images/band2.jpg';
@@ -121,26 +121,36 @@ const Grid = () => (
     <GridWrapper>
         <FlexContainer>
             <HalfWidth>
-                <img src={bandImage} alt="About The Band"/>
+            <Link to='/about/'>
+                <img src={bandImage} alt="About The Band" />
                 <Overlay><h2>About Us</h2></Overlay>
+                </Link>
             </HalfWidth>
             <HalfStacked>
                 <StackedItem>
-                    <img className="newsImage" src={bandImage2} alt="About The Band"/>
-                    <Overlay><h2>News</h2></Overlay>
+                    <Link to='/news/'>
+                        <img className="newsImage" src={bandImage2} alt="About The Band" />
+                        <Overlay><h2>News</h2></Overlay>
+                    </Link>
                 </StackedItem>
                 <StackedItem>
-                    <img src={bandImage3} alt="About The Band"/>
-                    <Overlay><h2>Shows</h2></Overlay>
+                <Link to='/music/'>
+                    <img src={bandImage3} alt="About The Band" />
+                    <Overlay><h2>Music</h2></Overlay>
+                    </Link>
                 </StackedItem>
             </HalfStacked>
             <ThirdWidth>
-                <img src={bandImage4} alt="About The Band"/>
+            <Link to='/news/'>
+                <img src={bandImage4} alt="About The Band" />
                 <Overlay><h2>Images</h2></Overlay>
+                </Link>
             </ThirdWidth>
             <TwoThirdWidth>
-                <img src={wideAngle} alt="About The Band"/>
+            <Link to='/video/'>
+                <img src={wideAngle} alt="About The Band" />
                 <Overlay><h2>Videos</h2></Overlay>
+                </Link>
             </TwoThirdWidth>
         </FlexContainer>
     </GridWrapper>

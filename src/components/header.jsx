@@ -12,7 +12,6 @@ const HeaderWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 2rem;
-
   @media screen and (max-width: 460px) {
     flex-direction: column;
     justify-content: center;
