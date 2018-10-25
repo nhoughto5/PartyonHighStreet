@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import NewsBanner from '../components/news-banner';
+import TourBanner from '../components/tour-banner';
 
 const ListWrapper = styled.div`
   margin: 2rem 2rem;
@@ -13,16 +13,16 @@ const ListWrapper = styled.div`
   }
 `;
 
-const NewsPage = ({ data }) => (
+const TourPage = ({ data }) => (
   <div>
-    <NewsBanner></NewsBanner>
+    <TourBanner></TourBanner>
     <ListWrapper>
-    {data.allMarkdownRemark.edges.map(newsPost => (
-      <div key={newsPost.node.frontmatter.title}>
-        <a href={newsPost.node.frontmatter.path}>
-        &#8226;{newsPost.node.frontmatter.title}
+    {data.allMarkdownRemark.edges.map(showPost => (
+      <div key={showPost.node.frontmatter.title}>
+        <a href={showPost.node.frontmatter.path}>
+        &#8226;{showPost.node.frontmatter.title}
         </a>
-        <p>{newsPost.node.frontmatter.summary}</p>
+        <p>{showPost.node.frontmatter.summary}</p>
       </div>
     ))}
     </ListWrapper>
@@ -30,7 +30,7 @@ const NewsPage = ({ data }) => (
 );
 
 export const pageQuery = graphql`
-  query NewsQuery {
+  query ShowQuery {
     allMarkdownRemark(limit: 10) {
       edges {
         node {
@@ -45,4 +45,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default NewsPage;
+export default TourPage;

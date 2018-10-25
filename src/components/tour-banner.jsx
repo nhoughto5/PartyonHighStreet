@@ -29,13 +29,13 @@ const Overlay = styled.div`
     color: white;
 `;
 
-const NewsPageBanner = () => (
+const TourPageBanner = () => (
     <BannerWrapper>
         <Banner></Banner>
         <Overlay>
-            <h1>News</h1>
+            <h1>Upcoming Shows</h1>
         </Overlay>
     </BannerWrapper>
 );
 
-export default NewsPageBanner;
+export default TourPageBanner;

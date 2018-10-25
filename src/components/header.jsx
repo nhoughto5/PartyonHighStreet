@@ -56,7 +56,7 @@ const Header = () => (
       <Link to='/about/'>About</Link>
       <Link to='/video/'>Videos</Link>
       <Link to='/music/'>Music</Link>
-      <Link to='/news/'>News</Link>
+      <Link to='/tour/'>Tour</Link>
     </RightLinks>
   </HeaderWrapper>
 );

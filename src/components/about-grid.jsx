@@ -63,11 +63,11 @@ const AboutGrid = () => (
                 <GridDesc>
                     <h2>The Party On High Street</h2>
                     <BoldText>victoria, bc, canada</BoldText>
-                    <p>Since finding each other in Nelson, B.C. 10 years ago The Party On High Street has worked tirelessly to bring it's signature feel-good funk jams to the people! We are a lively dance-inducing mix of funk, folk and jazz fuelled rock'n' roll, joyfully delivered and presented like a fun-bomb waiting to make you jive. Our band sings of peculiar youthful enchantments, weird love, and some of the odder aspects of life. Touring and playing live shows has fed our spirits and stroked our souls since the beginning. Every summer we travel further into the Canadian festival scene. Playing the campfires and stages, bars and backyards. ! We're taking our new songs and these experiences and recording a full blown electrified funk-rock album, due out Winter 2018!</p>
+                    <p>Since finding each other in Nelson, B.C. back in 2008, The Party on High Street has worked tirelessly to bring it's signature feel-good funk jams to the people. They are a lively dance-inducing mix of funk, folk, and jazz-fuelled rock n' roll, joyfully delivered and presented like a funbomb waiting to make you jive. The band sings of peculiar youthful enchantments, weird love, and some of the odder aspects of life. With 8 studio albums and hundreds of live shows under their belt, The Party on High Street are seasoned professionals who will leave you wishing the party never had to end.</p>
                 </GridDesc>
             </GridItem>
             <GridItem>
-                <img src={devon} alt="Brin" />
+                <img src={devon} alt="Devon" />
                 <GridDesc>
                     <h2>Devon</h2>
                     <BoldText>Drums / Vocals</BoldText>
@@ -85,7 +85,7 @@ const AboutGrid = () => (
                 </GridDesc>
             </GridItem>
             <GridItem>
-                <img src={trav} alt="Brin" />
+                <img src={trav} alt="Trav" />
                 <GridDesc>
                     <h2>Trav</h2>
                     <BoldText>guitar / vocals</BoldText>

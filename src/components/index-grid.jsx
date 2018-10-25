@@ -128,9 +128,9 @@ const Grid = () => (
             </HalfWidth>
             <HalfStacked>
                 <StackedItem>
-                    <Link to='/news/'>
-                        <img className="newsImage" src={bandImage2} alt="About The Band" />
-                        <Overlay><h2>News</h2></Overlay>
+                    <Link to='/tour/'>
+                        <img className="tourImage" src={bandImage2} alt="About The Band" />
+                        <Overlay><h2>Tour</h2></Overlay>
                     </Link>
                 </StackedItem>
                 <StackedItem>
@@ -141,7 +141,7 @@ const Grid = () => (
                 </StackedItem>
             </HalfStacked>
             <ThirdWidth>
-            <Link to='/news/'>
+            <Link to='/tour/'>
                 <img src={bandImage4} alt="About The Band" />
                 <Overlay><h2>Images</h2></Overlay>
                 </Link>

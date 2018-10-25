@@ -13,7 +13,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
   return new Promise((resolve, reject) => {
-    const newsPostTemplate = path.resolve('src/templates/newsPost.js');
+    const showPostTemplate = path.resolve('src/templates/showPost.js');
 
     resolve(graphql(`
         {
@@ -39,7 +39,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         res.data.allMarkdownRemark.edges.forEach(({ node }) => {
           createPage({
             path: node.frontmatter.path,
-            component: newsPostTemplate,
+            component: showPostTemplate,
           });
         });
       }),);
