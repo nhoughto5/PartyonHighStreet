@@ -10,7 +10,7 @@ import wideAngle from '../images/wideangle.jpg';
 const GridWrapper = styled.div`
     width: 100%;
     margin: 1rem auto;
-    padding: 0 2rem;
+    padding: 0 20%;
 
     @media screen and (max-width: 700px) {
         margin: 2rem auto;

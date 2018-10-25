@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import BannerAnim from '../classes/VideoBanner';
 
 const CanvasBanner = styled.div`
-    margin: 0 2rem;
+    margin: 0 20%;
     height: 35rem;
     max-height: 35rem;
     overflow: hidden;
