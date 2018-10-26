@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import Videos from '../components/video-grid';
 import bgImage from '../images/trio_vans.jpg';
+import Constant from '../classes/Constants';
 
 const BannerWrapper = styled.div`
-    margin: 0 2rem;
+    margin: 0 ${Constant.MAIN_PADDING}%;
     position: relative;
 `;
 

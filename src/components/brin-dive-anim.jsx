@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import BannerAnim from '../classes/VideoBanner';
+import BannerAnim from '../classes/FallingAnimation';
+import Constant from '../classes/Constants';
 
 const CanvasBanner = styled.div`
-    margin: 0 20%;
+    margin: 0 ${Constant.MAIN_PADDING}%;
     height: 35rem;
     max-height: 35rem;
     overflow: hidden;

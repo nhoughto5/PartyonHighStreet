@@ -1,6 +1,8 @@
 $header-font: 'Press Start 2P', cursive;
 $body-font: 'Work Sans', sans-serif;
-
+// $red: #fe4560;
+$red: #fc6f23;
+$blue: #98b5cc;
 * {
   margin: 0;
   padding: 0;
@@ -91,4 +93,18 @@ p {
   left: -9999px;
   right: -9999px;
   margin: auto;
+}
+
+.showTime {
+	font-family: 'CoreCircus', sans-serif;
+	text-transform: uppercase;
+	font-size: 6rem;
+	text-align: center;
+	line-height: 1;
+	font-weight: normal;
+	margin: 2rem auto;
+	color: $red;
+	letter-spacing: -0.4rem;
+	text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 1px 0px 0px $blue, 0px 1px 0px $blue, 2px 1px 0px $blue, 1px 2px 0px $blue, 3px 2px 0px $blue, 2px 3px 0px $blue, 4px 3px 0px $blue, 3px 4px 0px $blue, 5px 4px 0px $blue, 4px 5px 0px $blue, 6px 5px 0px $blue, 5px 6px 0px $blue, 7px 6px 0px $blue, 8px 7px 0px white, 9px 8px 0px white;
+
 }

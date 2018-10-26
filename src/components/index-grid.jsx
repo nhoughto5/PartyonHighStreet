@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
+import Constants from '../classes/Constants';
 import bandImage from '../images/band.jpg';
 import bandImage2 from '../images/band1.jpg';
 import bandImage3 from '../images/band2.jpg';
@@ -10,7 +11,7 @@ import wideAngle from '../images/wideangle.jpg';
 const GridWrapper = styled.div`
     width: 100%;
     margin: 1rem auto;
-    padding: 0 20%;
+    padding: 0 ${Constants.MAIN_PADDING}%;
 
     @media screen and (max-width: 700px) {
         margin: 2rem auto;
@@ -134,10 +135,14 @@ const Grid = () => (
                     </Link>
                 </StackedItem>
                 <StackedItem>
-                <Link to='/music/'>
-                    <img src={bandImage3} alt="About The Band" />
-                    <Overlay><h2>Music</h2></Overlay>
-                    </Link>
+                    {/* <Link to='/music/'>
+                        <img src={bandImage3} alt="About The Band" />
+                        <Overlay><h2>Music</h2></Overlay>
+                    </Link> */}
+                    <a href="https://thepartyonhighstreet.bandcamp.com/">
+                        <img src={bandImage3} alt="About The Band" />
+                        <Overlay><h2>Music</h2></Overlay>
+                    </a>
                 </StackedItem>
             </HalfStacked>
             <ThirdWidth>

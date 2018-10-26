@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import Constant from '../classes/Constants';
 import bgImage from '../images/wideangle.jpg';
 
 const BannerWrapper = styled.div`
-    margin: 0 2rem;
+    margin: 0 ${Constant.MAIN_PADDING}%;
     position: relative;
 `;
 
@@ -33,7 +33,7 @@ const TourPageBanner = () => (
     <BannerWrapper>
         <Banner></Banner>
         <Overlay>
-            <h1>Upcoming Shows</h1>
+            <h1>Tour</h1>
         </Overlay>
     </BannerWrapper>
 );

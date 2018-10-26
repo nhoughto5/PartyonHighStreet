@@ -9,7 +9,7 @@ import leaf1 from '../images/leaf1.png';
 import snowflake1 from '../images/snowflake1.png';
 import moon from '../images/Moon.png';
 
-export default class VideoBanner {
+export default class FallingAnimation {
   constructor() {
     this.container = document.getElementById('videoBannerContainer');
     this.app = new PIXI.Application({
@@ -134,7 +134,7 @@ export default class VideoBanner {
       const rectangle = new PIXI.Rectangle(1082, 0, 593, 452);
       texture.frame = rectangle;
       this.brinSprite = new PIXI.Sprite(texture);
-      let scale = window.innerWidth / this.normalPageSize;
+      let scale = 0.75 * window.innerWidth / this.normalPageSize;
       this.brinSprite.scale.set(scale, scale);
       this.stage.addChild(this.brinSprite);
       this.brinXSpeed = 1;

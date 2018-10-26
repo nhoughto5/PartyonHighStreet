@@ -1,7 +1,7 @@
 ---
 path: '/second-post'
-title: 'Second Blog Post'
-summary: 'This is the second news item'
+title: 'Logans Dance Party'
+summary: 'Come get groovy'
 ---
 
 ###HEHEHEHEHEH

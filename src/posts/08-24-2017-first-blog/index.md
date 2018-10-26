@@ -1,7 +1,7 @@
 ---
 path: '/first-post'
-title: 'First Blog Post'
-summary: 'This is the first news item'
+title: 'Lucky Strikes at Lucky Bar'
+summary: 'A night of hypnotic rythms'
 ---
 # Hello
 This is a news post!!
