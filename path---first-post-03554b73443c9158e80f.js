@@ -1,2 +1,2 @@
-webpackJsonp([98749194253172],{642:function(t,a){t.exports={data:{markdownRemark:{html:"<h1>Hello</h1>\n<p>This is a news post!!</p>",frontmatter:{path:"/first-post",title:"Lucky Strikes at Lucky Bar"}}},pathContext:{}}}});
+webpackJsonp([98749194253172],{644:function(t,a){t.exports={data:{markdownRemark:{html:"<h1>Hello</h1>\n<p>This is a news post!!</p>",frontmatter:{path:"/first-post",title:"Lucky Strikes at Lucky Bar"}}},pathContext:{}}}});
 //# sourceMappingURL=path---first-post-03554b73443c9158e80f.js.map

@@ -1,2 +1,2 @@
-webpackJsonp([26807536709107],{646:function(t,a){t.exports={data:{markdownRemark:{html:"<h3>HEHEHEHEHEH</h3>\n<p>This is a news post!!</p>",frontmatter:{path:"/second-post",title:"Logans Dance Party"}}},pathContext:{}}}});
+webpackJsonp([26807536709107],{648:function(t,a){t.exports={data:{markdownRemark:{html:"<h3>HEHEHEHEHEH</h3>\n<p>This is a news post!!</p>",frontmatter:{path:"/second-post",title:"Logans Dance Party"}}},pathContext:{}}}});
 //# sourceMappingURL=path---second-post-871b832e19e4c6149c74.js.map
