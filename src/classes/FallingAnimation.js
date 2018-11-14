@@ -39,11 +39,19 @@ export default class FallingAnimation {
     this.addCloud(cloud2);
     this.addCloud(cloud3);
     this.attachListeners();
+    // this.addBandName();
     this.app.ticker.add(this.animate, this);
+  }
+
+  addBandName() {
+    let text = new PIXI.Text('The Party on High Street',{fontFamily : 'Arial', fontSize: 24, fill : 0xff1010, align : 'center'});
+    text.position.set(this.container.offsetWidth / 2 - text.width / 2, 50);
+    this.stage.addChild(text);
   }
 
   addSprite(image, scale = 0.05, xPercent, yPercent, startAngle, spin = false) {
     let sprite = PIXI.Sprite.fromImage(image);
+    scale *= window.innerWidth / this.normalPageSize;
     sprite.scale.set(-scale, scale);
     this.stage.addChild(sprite);
     sprite.x = this.container.offsetWidth * xPercent;
@@ -64,7 +72,7 @@ export default class FallingAnimation {
       const rectangle = new PIXI.Rectangle(1082, 0, 593, 452);
       texture.frame = rectangle;
       this.brinSprite = new PIXI.Sprite(texture);
-      let scale = 0.7 * window.innerWidth / this.normalPageSize;
+      let scale = 0.8 * this.container.offsetWidth / this.normalPageSize;
       this.brinSprite.scale.set(scale, scale);
       this.stage.addChild(this.brinSprite);
       this.spriteXSpeed = 1;
@@ -100,7 +108,7 @@ export default class FallingAnimation {
   positionBrin() {
     if(!this.brinSprite) return;
     this.brinSprite.x = this.container.offsetWidth / 2 - this.brinSprite.width / 2;
-    this.brinSprite.y = this.container.offsetHeight / 2 - this.brinSprite.height / 2;
+    this.brinSprite.y = this.container.offsetHeight - this.brinSprite.height / 2;
   }
 
   addMoon() {
@@ -179,7 +187,7 @@ export default class FallingAnimation {
     sprite.x += 0.5 + amplitude * (Math.sin(sprite.currentRotAngle * freq));
     sprite.currentRotAngle += delta;
     if (sprite.spin) sprite.rotation += 0.001 * (Math.sin(freq * sprite.currentRotAngle) + 5);
-    if (sprite.y < -sprite.height) {
+    if (this.outsideContainer(sprite)) {
       sprite.x = sprite.startX;
       sprite.y = this.container.offsetHeight + sprite.height;
       sprite.fallSpeed = Utility.randomNumFromRange(0.2, 0.5);

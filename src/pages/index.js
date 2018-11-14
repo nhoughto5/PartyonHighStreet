@@ -29,7 +29,6 @@ class IndexPage extends React.Component {
 
   componentDidMount() {
     this.isMobile = Utility.isMobile();
-    return;
     if(true){
       timer(4000).pipe(
         tap((x) => this.setState({
@@ -56,12 +55,12 @@ class IndexPage extends React.Component {
   
   render() {
     return (
-      <HomePage/>
-      // <div>
-      //   {!this.isMobile && this.isFirstVisit && <TitlePage classes={this.state.classes} shouldRender={this.state.shouldRenderTitle} />}
-      //   {!this.isMobile && this.isFirstVisit && this.state.showHome && <HomePage/>}
-      //   {!this.isFirstVisit && <HomePage/>}
-      // </div>
+      // <HomePage/>
+      <div>
+        {!this.isMobile && this.isFirstVisit && <TitlePage classes={this.state.classes} shouldRender={this.state.shouldRenderTitle} />}
+        {!this.isMobile && this.isFirstVisit && this.state.showHome && <HomePage/>}
+        {!this.isFirstVisit && <HomePage/>}
+      </div>
     );
   }
 }
