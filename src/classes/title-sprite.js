@@ -16,11 +16,9 @@ export default class TitleAnimation {
 
   setUpDevon() {
       let app = new PIXI.Application({
-          backgroundColor: 0x1099bb,
           width: 200,
           height: 300,
           transparent: true,
-          antialias: true,
       });
       let container = document.getElementById('left');
       container.appendChild(app.view);
@@ -29,15 +27,18 @@ export default class TitleAnimation {
       sprite.scale.set(scale, scale);
       let stage = app.stage;
       stage.addChild(sprite);
+      TweenLite.from(container, 1.5, {
+        opacity: 0,
+        delay: 0.25,
+        x: "+=100"
+    });
   }
 
   setUpTravis() {
     let app = new PIXI.Application({
-        backgroundColor: 0x1099bb,
         width: 200,
         height: 300,
         transparent: true,
-        antialias: true,
     });
     let container = document.getElementById('right');
     container.appendChild(app.view);
@@ -46,6 +47,11 @@ export default class TitleAnimation {
     sprite.scale.set(scale, scale);
     let stage = app.stage;
     stage.addChild(sprite);
+    TweenLite.from(container, 1.5, {
+        opacity: 0,
+        delay: 0.5,
+        x: "-=100",
+    });
 }
 
   setUpBrin() {
@@ -72,7 +78,7 @@ export default class TitleAnimation {
           TweenLite.from(this.canvasBrin, 1.5, {
               scale: 0.1,
               opacity: 0,
-              delay: 0.5,
+              delay: 0.7,
               ease: Power1.easeOut,
               onComplete: () => {
                   this.moveBrin();
