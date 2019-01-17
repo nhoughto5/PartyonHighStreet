@@ -53,9 +53,9 @@ const Header = () => (
       <Link to='/'>The Party On High Street</Link>
     </LeftLogo>
     <RightLinks>
+      <Link to='/'>Home</Link>
       <Link to='/about/'>About</Link>
       <Link to='/video/'>Videos</Link>
-      {/* <Link to='/music/'>Music</Link> */}
       <a href="https://thepartyonhighstreet.bandcamp.com/">Music</a>
       <Link to='/tour/'>Tour</Link>
     </RightLinks>

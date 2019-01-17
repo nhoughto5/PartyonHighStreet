@@ -28,20 +28,20 @@ const TourPage = ({ data }) => (
     <TourBanner></TourBanner>
     <h1 className="showTime">Upcoming Shows</h1>
     <ListWrapper>
-    <hr></hr>
-    <hr></hr>
-    <hr></hr>
-    {data.allMarkdownRemark.edges.map(showPost => (
-      <div key={showPost.node.frontmatter.title}>
-        <a href={showPost.node.frontmatter.path}>
-        &#8226;{showPost.node.frontmatter.title}
-        </a>
-        <p>{showPost.node.frontmatter.summary}</p>
-        <hr></hr>
-      </div>
-    ))}
-        <hr></hr>
-    <hr></hr>
+      <hr></hr>
+      <hr></hr>
+      <hr></hr>
+      {data.allMarkdownRemark.edges.map(showPost => (
+        <div key={showPost.node.frontmatter.title}>
+          <a href={showPost.node.frontmatter.path}>
+          &#8226;{showPost.node.frontmatter.title}
+          </a>
+          <p>{showPost.node.frontmatter.summary}</p>
+          <hr></hr>
+        </div>
+      ))}
+      <hr></hr>
+      <hr></hr>
     </ListWrapper>
 
   </div>
@@ -49,13 +49,17 @@ const TourPage = ({ data }) => (
 
 export const pageQuery = graphql`
   query ShowQuery {
-    allMarkdownRemark(limit: 10) {
+    allMarkdownRemark(
+      limit: 10
+      filter: {frontmatter: {published: {eq: true}}}
+    ) {
       edges {
         node {
           frontmatter {
             title
             path
             summary
+            published
           }
         }
       }

@@ -62,7 +62,7 @@ const AboutGrid = () => (
             <GridItem>
                 <GridDesc>
                     <h2>The Party On High Street</h2>
-                    <BoldText>victoria, bc, canada</BoldText>
+                    <BoldText>Victoria, BC, Canada</BoldText>
                     <p>Since finding each other in Nelson, B.C. back in 2008, The Party on High Street has worked tirelessly to bring it's signature feel-good funk jams to the people. They are a lively dance-inducing mix of funk, folk, and jazz-fuelled rock n' roll, joyfully delivered and presented like a funbomb waiting to make you jive. The band sings of peculiar youthful enchantments, weird love, and some of the odder aspects of life. With 8 studio albums and hundreds of live shows under their belt, The Party on High Street are seasoned professionals who will leave you wishing the party never had to end.</p>
                 </GridDesc>
             </GridItem>
@@ -71,7 +71,7 @@ const AboutGrid = () => (
                 <GridDesc>
                     <h2>Devon</h2>
                     <BoldText>Drums / Vocals</BoldText>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec eros eu odio rhoncus iaculis et ut dui. Aliquam nunc ante, placerat eu cursus in, rutrum a nibh. Donec maximus dignissim dui. Nunc condimentum ipsum lectus, sit amet efficitur metus sollicitudin nec. Aenean eu tortor non nisi finibus consectetur eget id massa. Proin nec auctor massa. Nunc tincidunt, enim in molestie maximus, purus turpis vulputate odio, a malesuada risus ligula nec neque. Nunc pharetra libero blandit urna porta, ac pharetra elit mollis. Maecenas eget urna in ligula semper porta ac eu purus. Nam dictum facilisis turpis, in bibendum sapien laoreet ut. Nam libero ipsum, vehicula a massa sed, porttitor venenatis nisl.</p>
+                    <p>It all started in the back of a Winnebago parked in a front driveway, almost leaning out on to the road in front of my grandmothers home". His drum kit was hoisted on the back bed and guitar amp elevated apon the toilet. One day Devon, decided to traverse himself in music as a career and has been pushing forth down that path for the past 7 years. He currently is a touring drummer for Canada and U.S.A. with solid roots with "The Party On High Street". Touring usually half the year with different groups from all genres including, : Swing, Jazz, Funk, Folk, and Country. He currently resides in Vancouver and has been keeping himself as the house city drummer and touring drummer when called upon.</p>
                 </GridDesc>
             </GridItem>
         </FlexSpaceBetween>

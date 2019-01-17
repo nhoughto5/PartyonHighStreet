@@ -41,7 +41,7 @@ class VideoGrid extends React.Component {
           <br/>
           <VideoFlexGridTwo>
             <VideoGridItem srcURL="https://www.youtube.com/embed/ZqZRTUR-QL0"></VideoGridItem>
-            <VideoGridItem srcURL="https://www.youtube.com/embed/ZqZRTUR-QL0"></VideoGridItem>
+            <VideoGridItem srcURL="https://www.youtube.com/embed/CMX2sqPTAT4"></VideoGridItem>
           </VideoFlexGridTwo>
         </VideoGridWrap>
     );

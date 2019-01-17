@@ -1,7 +1,6 @@
 ---
 path: '/first-post'
-title: 'Lucky Strikes at Lucky Bar'
-summary: 'A night of hypnotic rythms'
+title: 'No shows booked, check back in soon!'
+summary: 'Coming soon'
+published: true
 ---
-# Hello
-This is a news post!!
