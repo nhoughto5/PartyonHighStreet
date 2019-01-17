@@ -122,39 +122,35 @@ const Grid = () => (
     <GridWrapper>
         <FlexContainer>
             <HalfWidth>
-            <Link to='/about/'>
-                <img src={bandImage} alt="About The Band" />
-                <Overlay><h2>About Us</h2></Overlay>
+                <Link to='/about/'>
+                    <img src={bandImage} alt="About The Band" />
+                    <Overlay><h2>About Us</h2></Overlay>
                 </Link>
             </HalfWidth>
             <HalfStacked>
                 <StackedItem>
                     <Link to='/tour/'>
-                        <img className="tourImage" src={bandImage2} alt="About The Band" />
+                        <img className="tourImage" src={bandImage2} alt="Upcoming tour dates" />
                         <Overlay><h2>Tour</h2></Overlay>
                     </Link>
                 </StackedItem>
                 <StackedItem>
-                    {/* <Link to='/music/'>
-                        <img src={bandImage3} alt="About The Band" />
-                        <Overlay><h2>Music</h2></Overlay>
-                    </Link> */}
                     <a href="https://thepartyonhighstreet.bandcamp.com/">
-                        <img src={bandImage3} alt="About The Band" />
+                        <img src={bandImage3} alt="Music" />
                         <Overlay><h2>Music</h2></Overlay>
                     </a>
                 </StackedItem>
             </HalfStacked>
             <ThirdWidth>
-            <Link to='/tour/'>
-                <img src={bandImage4} alt="About The Band" />
-                <Overlay><h2>Images</h2></Overlay>
+                <Link to='/tour/'>
+                    <img src={bandImage4} alt="Contact" />
+                    <Overlay><h2>Contact</h2></Overlay>
                 </Link>
             </ThirdWidth>
             <TwoThirdWidth>
-            <Link to='/video/'>
-                <img src={wideAngle} alt="About The Band" />
-                <Overlay><h2>Videos</h2></Overlay>
+                <Link to='/video/'>
+                    <img src={wideAngle} alt="Videos" />
+                    <Overlay><h2>Videos</h2></Overlay>
                 </Link>
             </TwoThirdWidth>
         </FlexContainer>

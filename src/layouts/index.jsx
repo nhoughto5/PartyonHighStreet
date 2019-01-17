@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import favicon from '../images/favicon.png'
 import Header from '../components/header.jsx';
+import Footer from '../components/footer.jsx';
 import './index.scss';
 
 const Layout = ({ children, data }) => (
@@ -19,6 +20,7 @@ const Layout = ({ children, data }) => (
     <div>
       {children()}
     </div>
+    <Footer></Footer>
   </div>
 )
 

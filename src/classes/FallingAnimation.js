@@ -8,8 +8,8 @@ import cloud3 from '../images/cloud3.png';
 import leaf1 from '../images/leaf1.png';
 import snowflake1 from '../images/snowflake1.png';
 import moon from '../images/Moon.png';
-import devon from '../images/DevonJump.png';
-import travis from '../images/TravisJump.png';
+import devon from '../images/devonJump.png';
+import travis from '../images/travisJump.png';
 
 export default class FallingAnimation {
   constructor() {
