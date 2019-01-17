@@ -15,5 +15,5 @@ module.exports = {
     },
     'gatsby-transformer-remark',
   ],
-  pathPrefix: '/PartyonHighStreet',
+  pathPrefix: '/',
 };
