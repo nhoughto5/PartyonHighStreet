@@ -1,2 +1,2 @@
-webpackJsonp([0x72e9f5bb9b74],{653:function(o,t){o.exports={data:{allMarkdownRemark:{edges:[{node:{frontmatter:{title:"No shows booked, check back in soon!",path:"/first-post",summary:"Coming soon",published:!0}}}]}},pathContext:{}}}});
+webpackJsonp([0x72e9f5bb9b74],{657:function(o,t){o.exports={data:{allMarkdownRemark:{edges:[{node:{frontmatter:{title:"No shows booked, check back in soon!",path:"/first-post",summary:"Coming soon",published:!0}}}]}},pathContext:{}}}});
 //# sourceMappingURL=path---tour-01b31bec21a9a8789bda.js.map
