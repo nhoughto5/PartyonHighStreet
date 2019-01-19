@@ -15,6 +15,7 @@ const Layout = ({ children, data }) => (
       <title>TPOHS</title>
       <link rel="shortcut icon" href={favicon} />
       <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600" rel="stylesheet"/>
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></link>
     </Helmet>
     <Header siteTitle={data.site.siteMetadata.title} />
     <div>

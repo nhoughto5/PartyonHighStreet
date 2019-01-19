@@ -142,10 +142,10 @@ const Grid = () => (
                 </StackedItem>
             </HalfStacked>
             <ThirdWidth>
-                <a href="https://www.facebook.com/thepartyonhighstreet/">
+                <Link to='/contact/S'>
                     <img src={bandImage4} alt="Contact" />
                     <Overlay><h2>Contact</h2></Overlay>
-                </a>
+                </Link>
                 {/* <Link to='/tour/'>
                     <img src={bandImage4} alt="Contact" />
                     <Overlay><h2>Contact</h2></Overlay>
