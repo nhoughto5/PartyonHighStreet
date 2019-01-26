@@ -1,0 +1,2 @@
+webpackJsonp([0x72e9f5bb9b74],{652:function(t,a){t.exports={data:{allMarkdownRemark:{edges:[{node:{frontmatter:{title:"Lucky Strikes at Lucky Bar",path:"/first-post",summary:"A night of hypnotic rythms"}}},{node:{frontmatter:{title:"Logans Dance Party",path:"/second-post",summary:"Come get groovy"}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---tour-c4111849241958a845fa.js.map
