@@ -142,14 +142,10 @@ const Grid = () => (
                 </StackedItem>
             </HalfStacked>
             <ThirdWidth>
-                <Link to='/contact/S'>
+                <Link to='/contact/'>
                     <img src={bandImage4} alt="Contact" />
                     <Overlay><h2>Contact</h2></Overlay>
                 </Link>
-                {/* <Link to='/tour/'>
-                    <img src={bandImage4} alt="Contact" />
-                    <Overlay><h2>Contact</h2></Overlay>
-                </Link> */}
             </ThirdWidth>
             <TwoThirdWidth>
                 <Link to='/video/'>

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PageWrapper = styled.div`
-    margin: 0 2rem;
+    margin: 0 10%;
     height: 85vh;
     position: relative;
     display:flex;
@@ -54,7 +54,7 @@ const Contact = styled.h1`
 `;
 
 const ContactPage = () => (
-    <PageWrapper>
+    <PageWrapper>">
         <Contact>Contact Us</Contact>
         <IconContainer>
             <Facebook href="https://www.facebook.com/thepartyonhighstreet">
