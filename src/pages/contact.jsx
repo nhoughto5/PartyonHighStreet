@@ -54,13 +54,13 @@ const Contact = styled.h1`
 `;
 
 const ContactPage = () => (
-    <PageWrapper>">
+    <PageWrapper>
         <Contact>Contact Us</Contact>
         <IconContainer>
             <Facebook href="https://www.facebook.com/thepartyonhighstreet">
                 <i className="fa fa-facebook"></i>
             </Facebook>
-            <Instagram href="https://www.instagram.com/t_rav_the_transformer/">
+            <Instagram href="https://www.instagram.com/thepartyonhighstreet">
                 <i className="fa fa-instagram"></i>
             </Instagram>
             <Youtube href="https://www.youtube.com/user/partyonhighstreet/videos">
