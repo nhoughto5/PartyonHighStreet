@@ -1,0 +1,2 @@
+webpackJsonp([0x9e0b71599e30],{679:function(t,o){t.exports={data:{markdownRemark:{html:"<p>Come on out for a great show!</p>",frontmatter:{path:"/kamloops",title:"Kamloops",date:"2019/06/11"}}},pathContext:{}}}});
+//# sourceMappingURL=path---kamloops-8e1088e0d3e31c9f8718.js.map
