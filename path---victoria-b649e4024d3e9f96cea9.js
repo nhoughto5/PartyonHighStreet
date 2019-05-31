@@ -1,0 +1,2 @@
+webpackJsonp([52546622697001],{687:function(t,e){t.exports={data:{markdownRemark:{html:"<h2>We're at the Copper owl with As the Crow Flies!</h2>\n<p><br/><br/></p>\n<p>Hey guys, hope to see you at the copper owl, check out the facebook event below: </p>",frontmatter:{path:"/victoria",title:"Victoria",date:"2019/06/06",fbURL:"https://www.facebook.com/events/535275793667190/?active_tab=about"}}},pathContext:{}}}});
+//# sourceMappingURL=path---victoria-b649e4024d3e9f96cea9.js.map

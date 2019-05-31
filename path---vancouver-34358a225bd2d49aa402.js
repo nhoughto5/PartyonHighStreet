@@ -1,0 +1,2 @@
+webpackJsonp([22535101493728],{686:function(e,t){e.exports={data:{markdownRemark:{html:"<h2>We're at the Lana Lous!</h2>\n<p><br/><br/></p>\n<p>Hey guys, hope to see you dancing, check out the facebook event below: </p>",frontmatter:{path:"/vancouver",title:"Vancouver",date:"2019/06/07",fbURL:"https://www.facebook.com/events/286094735671403/"}}},pathContext:{}}}});
+//# sourceMappingURL=path---vancouver-34358a225bd2d49aa402.js.map

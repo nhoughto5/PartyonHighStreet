@@ -1,0 +1,2 @@
+webpackJsonp([19711531922487],{682:function(t,e){t.exports={data:{markdownRemark:{html:"<h2>Way out and about at the rolla pub!</h2>\n<p><br/><br/></p>\n<p>Hey guys, hope to see you dancing, check out the facebook event below: </p>",frontmatter:{path:"/rollapub",title:"Rolla BC",date:"2019/06/19",fbURL:"https://www.facebook.com/events/434714607284422/"}}},pathContext:{}}}});
+//# sourceMappingURL=path---rollapub-3fd1eb54bf02b4b1a7a3.js.map

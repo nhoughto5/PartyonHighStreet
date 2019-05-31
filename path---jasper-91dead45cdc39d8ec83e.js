@@ -1,0 +1,2 @@
+webpackJsonp([0xb30bc772d83a],{673:function(e,t){e.exports={data:{markdownRemark:{html:"<h2>Where the mountains are!</h2>\n<p><br/><br/></p>\n<p>Hey guys, hope to see you dancing, check out the facebook event below: </p>",frontmatter:{path:"/jasper",title:"Jasper",date:"2019/06/26",fbURL:"https://www.facebook.com/events/1015304802190969/"}}},pathContext:{}}}});
+//# sourceMappingURL=path---jasper-91dead45cdc39d8ec83e.js.map

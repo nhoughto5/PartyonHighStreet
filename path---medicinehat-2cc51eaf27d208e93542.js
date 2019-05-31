@@ -1,0 +1,2 @@
+webpackJsonp([0xcf081f011982],{675:function(e,t){e.exports={data:{markdownRemark:{html:"<h2>Hartwood, here we come!</h2>\n<p><br/><br/></p>\n<p>Hey guys, hope to see you dancing, check out the facebook event below: </p>",frontmatter:{path:"/medicinehat",title:"Medicine Hat",date:"2019/07/01",fbURL:"https://www.facebook.com/events/333670667292338/"}}},pathContext:{}}}});
+//# sourceMappingURL=path---medicinehat-2cc51eaf27d208e93542.js.map

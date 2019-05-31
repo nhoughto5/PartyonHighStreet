@@ -1,0 +1,2 @@
+webpackJsonp([74159082969581],{690:function(t,e){t.exports={data:{markdownRemark:{html:"<h2>Its gonna be wild!</h2>\n<p><br/><br/></p>\n<p>Hey guys, hope to see you dancing, check out the facebook event below: </p>",frontmatter:{path:"/wildwood",title:"Wildwood",date:"2019/06/27",fbURL:"https://www.facebook.com/events/1520371658092914/"}}},pathContext:{}}}});
+//# sourceMappingURL=path---wildwood-f5362bbae699010b1da2.js.map
