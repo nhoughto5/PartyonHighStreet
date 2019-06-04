@@ -1,2 +1,2 @@
-webpackJsonp([0xbe8a6c804c72],{671:function(e,t){e.exports={data:{markdownRemark:{html:"<h2>Mikey!!</h2>\n<p><br/><br/></p>\n<p>Hey guys, hope to see you dancing, check out the facebook event below:</p>",frontmatter:{path:"/calgary",title:"Calgary",date:"2019/06/29",fbURL:"https://www.facebook.com/events/2067408986690214/"}}},pathContext:{}}}});
+webpackJsonp([0xbe8a6c804c72],{674:function(e,t){e.exports={data:{markdownRemark:{html:"<h2>Mikey!!</h2>\n<p><br/><br/></p>\n<p>Hey guys, hope to see you dancing, check out the facebook event below:</p>",frontmatter:{path:"/calgary",title:"Calgary",date:"2019/06/29",fbURL:"https://www.facebook.com/events/2067408986690214/"}}},pathContext:{}}}});
 //# sourceMappingURL=path---calgary-6df6d2b554ad538803fc.js.map

@@ -1,2 +1,2 @@
-webpackJsonp([23668636161182],{695:function(e,t){e.exports={data:{markdownRemark:{html:"<h2>Oh Wells!</h2>\n<p><br/><br/></p>\n<p>Hey guys, hope to see you dancing, check out the facebook event below:</p>",frontmatter:{path:"/wells",title:"Wells",date:"2019/06/13",fbURL:"https://www.facebook.com/events/336776227220990/"}}},pathContext:{}}}});
+webpackJsonp([23668636161182],{699:function(e,t){e.exports={data:{markdownRemark:{html:"<h2>Oh Wells!</h2>\n<p><br/><br/></p>\n<p>Hey guys, hope to see you dancing, check out the facebook event below:</p>",frontmatter:{path:"/wells",title:"Wells",date:"2019/06/13",fbURL:"https://www.facebook.com/events/336776227220990/"}}},pathContext:{}}}});
 //# sourceMappingURL=path---wells-921738e8522ce9a70984.js.map
