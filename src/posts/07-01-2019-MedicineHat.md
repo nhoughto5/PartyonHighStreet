@@ -6,7 +6,7 @@ date: '2019/07/01'
 location: 'The Hartwood Cafe'
 published: true
 fbURL: 'https://www.facebook.com/events/333670667292338/'
-time: '2am'
+time: '2pm'
 ---
 
 ## Hartwood, here we come!
