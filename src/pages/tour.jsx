@@ -32,13 +32,13 @@ const TourPage = ({ data }) => (
       <hr></hr>
       <hr></hr>
       {data.allMarkdownRemark.edges.map(showPost => (
-        <div key={showPost.node.frontmatter.title}>
-          <a href={showPost.node.frontmatter.path}>
-          &#8226;{showPost.node.frontmatter.title}
-          </a>
-          <p>{showPost.node.frontmatter.summary}</p>
-          <hr></hr>
-        </div>
+
+        <a href={showPost.node.frontmatter.path}>
+          <div className="tour-entry" key={showPost.node.frontmatter.title}>
+            <div className="leftAlign">{showPost.node.frontmatter.title}: <div className="locationClass">At: {showPost.node.frontmatter.location}</div></div>
+            <p>{new Date(showPost.node.frontmatter.date).toDateString()}</p>
+          </div>
+        </a>
       ))}
       <hr></hr>
       <hr></hr>
@@ -50,7 +50,8 @@ const TourPage = ({ data }) => (
 export const pageQuery = graphql`
   query ShowQuery {
     allMarkdownRemark(
-      limit: 10
+      limit: 100
+      sort: {fields:[frontmatter___date]} 
       filter: {frontmatter: {published: {eq: true}}}
     ) {
       edges {
@@ -60,6 +61,8 @@ export const pageQuery = graphql`
             path
             summary
             published
+            date
+            location
           }
         }
       }

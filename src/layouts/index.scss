@@ -108,3 +108,51 @@ p {
 	text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 1px 0px 0px $blue, 0px 1px 0px $blue, 2px 1px 0px $blue, 1px 2px 0px $blue, 3px 2px 0px $blue, 2px 3px 0px $blue, 4px 3px 0px $blue, 3px 4px 0px $blue, 5px 4px 0px $blue, 4px 5px 0px $blue, 6px 5px 0px $blue, 5px 6px 0px $blue, 7px 6px 0px $blue, 8px 7px 0px white, 9px 8px 0px white;
 
 }
+
+.tour-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 1rem 0;
+  font-weight: bold;
+  color: black;
+  
+  &:hover {
+    background:#cccccc;
+    transition:all 0.1s ease;
+    box-shadow: 0 0 5px 5px white inset;
+  }
+  p {
+    min-width: 20%;
+    text-align: right;
+    padding-right: 1%;
+  }
+
+  .locationClass
+  {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: normal;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    text-transform: lowercase;
+    color:$red;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+  }
+
+  .leftAlign{
+    text-align: left;
+  }
+}
+
+.facebookURL {
+  text-align: center;
+  font-weight: bold;
+  color: #3414e9;
+  font-size: 2rem;
+  text-decoration: underline;
+}

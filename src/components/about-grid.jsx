@@ -6,27 +6,7 @@ import brin from '../images/brin.jpg';
 import trav from '../images/trav.jpg';
 import devon from '../images/devon.jpg';
 
-const GridWrapper = styled.div`
-    width: 100%;
-    max-width: 1000px;
-    margin: 7rem auto;
-    padding: 0 2rem;
-`;
-
-const FlexItem = styled.div`
-    display: flex;
-    margin-bottom: 2rem;
-    overflow: hidden;
-    flex-wrap: wrap;
-`
-
-const FlexSpaceBetween = FlexItem.extend`
-    justify-content: space-between;
-`
-
-const FlexCentered = FlexItem.extend`
-    justify-content: center;
-`
+import { BoldText, FlexItem, GridWrapper, FlexSpaceBetween } from "./layout/shared.js";
 
 const GridItem = styled.div`
     width: 48%;
@@ -49,11 +29,6 @@ const GridItem = styled.div`
 
 const GridDesc = styled.div`
     padding: 1rem 0;
-`
-
-const BoldText = styled.p`
-    font-weight: 600;
-    padding-bottom: 1rem;
 `
 
 const AboutGrid = () => (
