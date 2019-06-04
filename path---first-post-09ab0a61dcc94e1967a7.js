@@ -1,2 +1,2 @@
-webpackJsonp([98749194253172],{670:function(t,o){t.exports={data:{markdownRemark:{html:"",frontmatter:{path:"/first-post",title:"No shows booked, check back in soon!",date:null,fbURL:null}}},pathContext:{}}}});
+webpackJsonp([98749194253172],{675:function(t,o){t.exports={data:{markdownRemark:{html:"",frontmatter:{path:"/first-post",title:"No shows booked, check back in soon!",date:null,fbURL:null}}},pathContext:{}}}});
 //# sourceMappingURL=path---first-post-09ab0a61dcc94e1967a7.js.map

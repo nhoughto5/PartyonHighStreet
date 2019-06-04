@@ -1,0 +1,2 @@
+webpackJsonp([89403427254740],{683:function(t,e){t.exports={data:{markdownRemark:{html:"<h2>It ain't fair!!</h2>\n<p><br/><br/></p>\n<p>Hey guys, hope to see you dancing, check out the facebook event below:</p>",frontmatter:{path:"/ncf",title:"North Country Fair",date:"2019/06/21",fbURL:"https://www.facebook.com/events/2392334864371383/"}}},pathContext:{}}}});
+//# sourceMappingURL=path---ncf-0dbeeff75a3e66c20180.js.map

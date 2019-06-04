@@ -1,0 +1,2 @@
+webpackJsonp([0x9e0b71599e30],{679:function(t,e){t.exports={data:{markdownRemark:{html:"<h2>I intent to eat too much at Pizza pi</h2>\n<p><br/><br/></p>\n<p>Hey guys, hope to see you dancing, check out the facebook event below:</p>",frontmatter:{path:"/kamloops",title:"Kamloops",date:"2019/06/11",fbURL:"https://www.facebook.com/events/871078513236634/"}}},pathContext:{}}}});
+//# sourceMappingURL=path---kamloops-607e35442d66037481a8.js.map

@@ -1,32 +1,36 @@
 {
   "assetsByChunkName": {
     "component---src-pages-tour-jsx": [
-      "component---src-pages-tour-jsx-5a30f1840644c8232668.js",
-      "component---src-pages-tour-jsx-5a30f1840644c8232668.js.map"
+      "component---src-pages-tour-jsx-35d6e6a88ba98adee2e3.js",
+      "component---src-pages-tour-jsx-35d6e6a88ba98adee2e3.js.map"
     ],
     "path---nelson": [
-      "path---nelson-22d23538baa436402c07.js",
-      "path---nelson-22d23538baa436402c07.js.map"
+      "path---nelson-3bd0edde09aa8b710697.js",
+      "path---nelson-3bd0edde09aa8b710697.js.map"
     ],
     "path---rollapub": [
-      "path---rollapub-3fd1eb54bf02b4b1a7a3.js",
-      "path---rollapub-3fd1eb54bf02b4b1a7a3.js.map"
+      "path---rollapub-d7adc64b722b7a9cce8b.js",
+      "path---rollapub-d7adc64b722b7a9cce8b.js.map"
     ],
     "path---vancouver": [
-      "path---vancouver-34358a225bd2d49aa402.js",
-      "path---vancouver-34358a225bd2d49aa402.js.map"
+      "path---vancouver-cdb3ecab66ca5abce4f3.js",
+      "path---vancouver-cdb3ecab66ca5abce4f3.js.map"
     ],
     "path---wells": [
-      "path---wells-e1ca87379f789a0476bf.js",
-      "path---wells-e1ca87379f789a0476bf.js.map"
+      "path---wells-921738e8522ce9a70984.js",
+      "path---wells-921738e8522ce9a70984.js.map"
+    ],
+    "path---kelowna": [
+      "path---kelowna-08fe8f5c1c03327ac4db.js",
+      "path---kelowna-08fe8f5c1c03327ac4db.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-e7fd9388f0854114085a.js",
       "component---src-pages-index-js-e7fd9388f0854114085a.js.map"
     ],
     "path---victoria": [
-      "path---victoria-b649e4024d3e9f96cea9.js",
-      "path---victoria-b649e4024d3e9f96cea9.js.map"
+      "path---victoria-1e668eb5b506032b76a2.js",
+      "path---victoria-1e668eb5b506032b76a2.js.map"
     ],
     "component---src-pages-contact-jsx": [
       "component---src-pages-contact-jsx-519edabdd4174bef8b83.js",
@@ -37,8 +41,8 @@
       "path----988ddd1ff3fa5cbf8797.js.map"
     ],
     "path---wildwood": [
-      "path---wildwood-f5362bbae699010b1da2.js",
-      "path---wildwood-f5362bbae699010b1da2.js.map"
+      "path---wildwood-89ad59518be5d2bb3ef7.js",
+      "path---wildwood-89ad59518be5d2bb3ef7.js.map"
     ],
     "path---tba": [
       "path---tba-31e0dad54de5965d93fa.js",
@@ -49,8 +53,8 @@
       "component---src-layouts-index-jsx-6f5a879217c9e3143437.js.map"
     ],
     "path---ncf": [
-      "path---ncf-465f9b144e35c9725961.js",
-      "path---ncf-465f9b144e35c9725961.js.map"
+      "path---ncf-0dbeeff75a3e66c20180.js",
+      "path---ncf-0dbeeff75a3e66c20180.js.map"
     ],
     "path---robsonvalley": [
       "path---robsonvalley-3035b36be1cc08331f86.js",
@@ -69,16 +73,16 @@
       "path---video-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---tour": [
-      "path---tour-53a1287875ed1d0f9e82.js",
-      "path---tour-53a1287875ed1d0f9e82.js.map"
+      "path---tour-b3c0fe95afb52fb583e6.js",
+      "path---tour-b3c0fe95afb52fb583e6.js.map"
     ],
     "path---title-page": [
       "path---title-page-a0e39f21c11f6a62c5ab.js",
       "path---title-page-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---quesnel": [
-      "path---quesnel-9b7ff8de70c9d75995aa.js",
-      "path---quesnel-9b7ff8de70c9d75995aa.js.map"
+      "path---quesnel-7d6bf917de5b3a94ee54.js",
+      "path---quesnel-7d6bf917de5b3a94ee54.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -89,8 +93,8 @@
       "component---src-pages-about-jsx-0c82902f7e98a11e9a9e.js.map"
     ],
     "path---princegeorge": [
-      "path---princegeorge-8c56a696f866290a31a4.js",
-      "path---princegeorge-8c56a696f866290a31a4.js.map"
+      "path---princegeorge-2fe6a0799797a6681518.js",
+      "path---princegeorge-2fe6a0799797a6681518.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -101,8 +105,8 @@
       "commons-4d82426ccdfcc81d5cd9.js.map"
     ],
     "path---kamloops": [
-      "path---kamloops-8581308ad5b8302571f4.js",
-      "path---kamloops-8581308ad5b8302571f4.js.map"
+      "path---kamloops-607e35442d66037481a8.js",
+      "path---kamloops-607e35442d66037481a8.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -129,28 +133,36 @@
       "component---src-pages-home-page-jsx-d99bf9bdd5a7649cbbee.js.map"
     ],
     "path---jasper": [
-      "path---jasper-91dead45cdc39d8ec83e.js",
-      "path---jasper-91dead45cdc39d8ec83e.js.map"
+      "path---jasper-3812922e579149012c0b.js",
+      "path---jasper-3812922e579149012c0b.js.map"
+    ],
+    "path---enderby": [
+      "path---enderby-0d96c31eb73c847e63a4.js",
+      "path---enderby-0d96c31eb73c847e63a4.js.map"
     ],
     "path---100-mil-3-house": [
-      "path---100-mil-3-house-86b0db6c7bc0e3d22206.js",
-      "path---100-mil-3-house-86b0db6c7bc0e3d22206.js.map"
+      "path---100-mil-3-house-1b67c2bf82dd85c29193.js",
+      "path---100-mil-3-house-1b67c2bf82dd85c29193.js.map"
     ],
     "component---src-pages-title-page-jsx": [
       "component---src-pages-title-page-jsx-bff11d8ed5b063302160.js",
       "component---src-pages-title-page-jsx-bff11d8ed5b063302160.js.map"
+    ],
+    "path---calgary": [
+      "path---calgary-6df6d2b554ad538803fc.js",
+      "path---calgary-6df6d2b554ad538803fc.js.map"
     ],
     "path---winlaw": [
       "path---winlaw-776cd30474e861f0f79d.js",
       "path---winlaw-776cd30474e861f0f79d.js.map"
     ],
     "path---medicinehat": [
-      "path---medicinehat-2cc51eaf27d208e93542.js",
-      "path---medicinehat-2cc51eaf27d208e93542.js.map"
+      "path---medicinehat-74407680da4f11af7148.js",
+      "path---medicinehat-74407680da4f11af7148.js.map"
     ],
     "app": [
-      "app-756ec857f6b6f7fe88af.js",
-      "app-756ec857f6b6f7fe88af.js.map"
+      "app-eda1797ab9ce8637507d.js",
+      "app-eda1797ab9ce8637507d.js.map"
     ],
     "path---home-page": [
       "path---home-page-a0e39f21c11f6a62c5ab.js",
